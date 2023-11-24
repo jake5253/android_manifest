@@ -17,3 +17,13 @@ repo sync -j$(( $(nproc) - 1 )) -l
 - `sync -n` only performs network (download) portion of sync
 - `sync -l` only performs local (extraction) portion of sync
   - Leaves a core available for other tasks.
+
+```
+cd vendor/amlogic/common
+git lfs pull
+cd -
+cd device/khadas
+git lfs pull
+cd -
+```
+... i'm just gonna make a script. jeesh!
