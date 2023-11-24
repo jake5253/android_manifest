@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android.googlesource.com/"/>
+  <remote fetch="https://android.googlesource.com/" name="aosp" review="https://android.googlesource.com/" revision="refs/tags/android-11.0.0_r73" />
   <remote fetch="https://github.com/khadas/" name="github" />
   <default remote="github" revision="khadas-vim1s-r" sync-c="true" sync-j="4"/>
   
-  <project name="android_vendor_amlogic_common_external_DTVKit_android-inputsource" path="vendor/amlogic/common/external/DTVKit/android-inputsource" revision="137e1c87b91e9bddddd76771031ea7337b60e32b"  />
-  <project name="android_vendor_amlogic_common_external_DTVKit_releaseDTVKit" path="vendor/amlogic/common/external/DTVKit/releaseDTVKit" revision="bb3cc8b20737b07c18e6ed8ae20aa0fe5532c2a6"  />
-  <project name="android_vendor_amlogic_common_external_DTVKit_cas_hal" path="vendor/amlogic/common/external/DTVKit/cas_hal" revision="f76895d48c42f3d1a2e03d1eb15fc76666d591ef" />
-  <project name="android_device_generic_art" path="device/generic/art" revision="e10e1c2ca6d471e654854cd07d320a4935ea529c"   />
-  <project name="android_device_google_atv" path="device/google/atv" revision="d68fc2c36edf6a9ce4ca8696826803ee08130f01"   />
-  <project name="android_device_khadas" path="device/khadas" revision="49ebc680cbba3afc581e39769c1ac571805a247a"  >
+  <project name="android_vendor_amlogic_common_external_DTVKit_android-inputsource" path="vendor/amlogic/common/external/DTVKit/android-inputsource" />
+  <project name="android_vendor_amlogic_common_external_DTVKit_releaseDTVKit" path="vendor/amlogic/common/external/DTVKit/releaseDTVKit" />
+  <project name="android_vendor_amlogic_common_external_DTVKit_cas_hal" path="vendor/amlogic/common/external/DTVKit/cas_hal" />
+  <project name="android_device_generic_art" path="device/generic/art" />
+  <project name="android_device_google_atv" path="device/google/atv" />
+  <project name="android_device_khadas" path="device/khadas" >
     <copyfile src="common/kernelbuild/mk" dest="mk"/>
   </project>
-  <project name="android_device_khadas_kvim1s-kernel" path="device/khadas/kvim1s-kernel" revision="b7ceab43c49f894c2d975684a1a9cbff39f2e0c6"  />
-  <project name="android_device_mediatek_wembley-sepolicy" path="device/mediatek/wembley-sepolicy" revision="39fccbba164e873b4ccd9abab3585d8e0f64ccbe"   />
-  <project name="android_device_sample" path="device/sample" revision="5c4f1d093d7771d6ac327e87e19698cec6bf3a34"   />
-  <project name="android_vendor_amlogic_common_external_dvb" path="vendor/amlogic/common/external/dvb" revision="83e1ad3f2435b1edda5546e82be58570e193b994"  />
-  <project name="linux" path="common" revision="63aa4ca309007b28fc8989d3e852fc24fcef375c"  />
-  <project name="android_kernel_configs" path="kernel/configs" revision="178f850d79d2ee6e84ab1ee31e36bd06c2402e49"   />
-  <project name="android_kernel_prebuilts_4.19_arm64" path="kernel/prebuilts/4.19/arm64" revision="332808127a212d39ef607a3241fe0ff1d48cd795"    />
-  <project name="android_kernel_tests" path="kernel/tests" revision="c69e8a5eb61c73ae16d2cc98ae16597e12c3b176"   />
-  <project name="android_vendor_amlogic_common_libdvr" path="vendor/amlogic/common/libdvr" revision="c027ce338223b9bb7b354796b2d7f0261bd71862"  />
-  <project name="android_vendor_amlogic_common_libsecdmx_release" path="vendor/amlogic/common/libsecdmx_release" revision="580b264908b3d8fd2847850a46b162bbe2801bf8"  />
-  <project name="android_vendor_amlogic_common_gpu-lib" path="vendor/amlogic/common/gpu-lib" revision="e16fb4e9cff9db5ba69036ffe86ad5267e7472cd"  />
-  <project name="android_art" path="art" revision="83cd633bec9586c44d214f01734d29de582882a3"   />
-  <project name="android_bionic" path="bionic" revision="673bb02eec857ef6b004e562ab41d6b3a0e21b8a"   />
-  <project name="android_bootable_recovery" path="bootable/recovery" revision="9b9561c3e450d1efbba79ffc4ee655dfdf8c891b"   />
-  <project name="android_build_make" path="build/make" revision="7ce65a35ab48ca6bcf278d2d21992845ec5c2438"   >
+  <project name="android_device_khadas_kvim1s-kernel" path="device/khadas/kvim1s-kernel" />
+  <project name="android_device_mediatek_wembley-sepolicy" path="device/mediatek/wembley-sepolicy" />
+  <project name="android_device_sample" path="device/sample" />
+  <project name="android_vendor_amlogic_common_external_dvb" path="vendor/amlogic/common/external/dvb" />
+  <project name="linux" path="common" />
+  <project name="android_kernel_configs" path="kernel/configs" />
+  <project name="android_kernel_prebuilts_4.19_arm64" path="kernel/prebuilts/4.19/arm64" />
+  <project name="android_kernel_tests" path="kernel/tests" />
+  <project name="android_vendor_amlogic_common_libdvr" path="vendor/amlogic/common/libdvr" />
+  <project name="android_vendor_amlogic_common_libsecdmx_release" path="vendor/amlogic/common/libsecdmx_release" />
+  <project name="android_vendor_amlogic_common_gpu-lib" path="vendor/amlogic/common/gpu-lib" />
+  <project name="android_art" path="art" />
+  <project name="android_bionic" path="bionic" />
+  <project name="android_bootable_recovery" path="bootable/recovery" />
+  <project name="android_build_make" path="build/make" >
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -35,767 +35,761 @@
     <linkfile dest="build/target" src="target"/>
     <linkfile dest="build/tools" src="tools"/>
   </project>
-  <project name="android_build_blueprint" path="build/blueprint" revision="ea7e0bfc0d4586e2046cd328a4d2e6e694ed783c"   />
-  <project name="android_build_soong" path="build/soong" revision="6feb3e44ca99511e8dd574a4b88ebc45b5e243d1"   >
+  <project name="android_build_blueprint" path="build/blueprint" />
+  <project name="android_build_soong" path="build/soong" >
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project name="android_compatibility_cdd" path="compatibility/cdd" revision="1acecdbd3ebea79c994392507d9188b659e5204b"   />
-  <project name="platform/cts" remote="aosp" path="cts" revision="a9b799933ac0ac3bb88ad4006de45b3bae2f8042"   />
-  <project name="android_dalvik" path="dalvik" revision="f85ce5c7b13e8ae81b2e59f45c25f27dcb76e834"   />
-  <project name="android_developers_build" path="developers/build" revision="b95e2339e3040470dbe7096f59b77c9cc1b776ff"   />
-  <project name="android_developers_demos" path="developers/demos" revision="03814c35b8ee0a1284c667556260124d97466b28"   />
-  <project name="android_developers_samples_android" path="developers/samples/android" revision="ca2402d8ebd333ffa0941a9baabe17eb365c28a7"   />
-  <project name="android_development" path="development" revision="606e848a3621a5caa1efdc5db50c97887fad80d8"   />
-  <project name="android_external_FP16" path="external/FP16" revision="4039a7ffa4bbee623e1e616efef9a387b2a8b47d"   />
-  <project name="android_external_FXdiv" path="external/FXdiv" revision="c577b94ed81e89bb905b7cbba8043480561afda6"   />
-  <project name="android_external_ImageMagick" path="external/ImageMagick" revision="46696775cff41245ab4a23a7c89f6d399543852c"   />
-  <project name="android_external_OpenCL-CTS" path="external/OpenCL-CTS" revision="5f72eacd832176138d336c45f152a383530f081c"  />
-  <project name="android_external_OpenCSD" path="external/OpenCSD" revision="060a9da419873f9dbc234f8f85ca5704ce955c3f"   />
-  <project name="android_external_Reactive-Extensions_RxCpp" path="external/Reactive-Extensions/RxCpp" revision="439b0fad1d24972948f96f58a8931ebe72d0ab29"   />
-  <project name="android_external_XNNPACK" path="external/XNNPACK" revision="5fa0858b57c36722f0ab2606c606e927b5a40448"   />
-  <project name="android_external_aac" path="external/aac" revision="639e291f5c5b96846483a4d82d61a3906b6aeb4c"   />
-  <project name="android_external_adeb" path="external/adeb" revision="8c34d5da63b96dd7abbcb3321192ee943ec948db"   />
-  <project name="android_external_adhd" path="external/adhd" revision="09facf5f7124f83e2f3df792b951fac6530a9f0c"   />
-  <project name="android_external_android-clat" path="external/android-clat" revision="7de71e81c38303aaba8dc88f4b146c4f20c3418e"   />
-  <project name="android_external_androidplot" path="external/androidplot" revision="b999712946d5141812fa2456e652db6b818d439e"   />
-  <project name="android_external_angle" path="external/angle" revision="e395d58e6cde4a5b7d17349a5d743f148a1eea7d"   />
-  <project name="android_external_ant-glob" path="external/ant-glob" revision="45461635647e5481fa67473795782ce232e44fe1"   />
-  <project name="android_external_antlr" path="external/antlr" revision="f207c52043d762d9cfbfd87986b5194c855a318a"   />
-  <project name="android_external_apache-commons-bcel" path="external/apache-commons-bcel" revision="50e755197cd5de9d584414616d6d48877c92c649"   />
-  <project name="android_external_apache-commons-compress" path="external/apache-commons-compress" revision="5334065cacdd3d1af2688d4617918ec0460708e1"   />
-  <project name="android_external_apache-commons-math" path="external/apache-commons-math" revision="f30081520947ace21933c4f6ade062152c9b99f3"   />
-  <project name="android_external_apache-harmony" path="external/apache-harmony" revision="61f55349a0d486a13f934fff77cac5f4421e6964"   />
-  <project name="android_external_apache-http" path="external/apache-http" revision="3ed8712e122625ee614e424e4ab9c8facad1eeed"   />
-  <project name="android_external_apache-xml" path="external/apache-xml" revision="068ada767c295d9b040641db0d8ff8cf5c9c5a6e"   />
-  <project name="android_external_arm-neon-tests" path="external/arm-neon-tests" revision="bc9bbf361c8cabbd4ae0a215de5871fad527915e"   />
-  <project name="android_external_arm-optimized-routines" path="external/arm-optimized-routines" revision="8edcec53c6d84dc7f85e4c0a8539384b3fe489ec"   />
-  <project name="android_external_arm-trusted-firmware" path="external/arm-trusted-firmware" revision="cabe6937f2c9d0a50e4631c0545bddd650233ae8"   />
-  <project name="android_external_autotest" path="external/autotest" revision="24e35fe5e5d027a2f0f96c568680da1ffc2d303b"   />
-  <project name="android_external_avb" path="external/avb" revision="5a2b0ed1b6e360303642ee05e970373fb86ca253"   />
-  <project name="android_external_bc" path="external/bc" revision="4a29cb9b257582baa92082f9bd978fdb764414f7"   />
-  <project name="android_external_bcc" path="external/bcc" revision="41065cda77e818716bab177ea578da7ea6419a0a"   />
-  <project name="android_external_blktrace" path="external/blktrace" revision="060b8359b7de580cd8c7d734ae69caa300bfda56"   />
-  <project name="android_external_boringssl" path="external/boringssl" revision="a0831b5222cf1d99251d3906efff4cf44f2c64ec"   />
-  <project name="android_external_bouncycastle" path="external/bouncycastle" revision="4bc9e6ac74bab2c5aa00d592671088a0c45e2322"   />
-  <project name="android_external_brotli" path="external/brotli" revision="619bffd9209f3ded7513ba5918b4497a3bdf3f51"   />
-  <project name="android_external_bsdiff" path="external/bsdiff" revision="68a0ca2dade5b6707dd7068b3c59f3d1ead041be"   />
-  <project name="android_external_bzip2" path="external/bzip2" revision="c6c36df1fce6e8d61865d934d405804b1e2893ed"   />
-  <project name="android_external_caliper" path="external/caliper" revision="8180ab2636a5314cce94f4886033eb1494ba45d2"   />
-  <project name="android_external_capstone" path="external/capstone" revision="f1f1cbc054db7021d4167a96b55783e087e1b7b4"   />
-  <project name="android_external_catch2" path="external/catch2" revision="dba03cace0e298b6a690c00ccd99848193c2e0f9"   />
-  <project name="android_external_cblas" path="external/cblas" revision="d82c5f4ae14b2a5468303985070f7dadc15d4094"   />
-  <project name="android_external_cbor-java" path="external/cbor-java" revision="f81e576298790c97498311e99a0b0b34653c3dd8"   />
-  <project name="android_external_chromium-libpac" path="external/chromium-libpac" revision="10790f39afac87780ceef3b0c65e48b6051217a0"   />
-  <project name="android_external_chromium-trace" path="external/chromium-trace" revision="e524766cad26d677a9a1ec8c00c512d4cac2cf5e"   />
-  <project remote="aosp" name="platform/external/chromium-webview" path="external/chromium-webview" revision="3a8d2089900522ca542c39055d51b08188fb11cb" upstream="refs/tags/android-12.1.0_r11" groups="pdk" clone-depth="1"/>
-  <project name="android_external_clang" path="external/clang" revision="0a1c53a5d295109bd4702ad13c0f2a5510ca1b26"   />
-  <project name="android_external_cldr" path="external/cldr" revision="121066092b0be7a112fbac97a1c9d914f7613615"   />
-  <project name="android_external_cn-cbor" path="external/cn-cbor" revision="696530332036f5518681d3c450cdbc3ee412004a"   />
-  <project name="android_external_compiler-rt" path="external/compiler-rt" revision="3af33001472e064655de5f3cb28a8ee59e8b3f61"   />
-  <project name="android_external_conscrypt" path="external/conscrypt" revision="5130ba38a11ad570582feb1ecde8f6450f8a3601"   />
-  <project name="android_external_cpu_features" path="external/cpu_features" revision="261550055f23a688466c7eb0c9642d0311146b63"   />
-  <project name="android_external_cpuinfo" path="external/cpuinfo" revision="2e369efc3f37932d3b1f78d8076961b82753fb0d"   />
-  <project name="android_external_crcalc" path="external/crcalc" revision="719c7cd8fec743584dcd101f977f3ac721dc0e0b"   />
-  <project name="android_external_cros_system_api" path="external/cros/system_api" revision="62a171fbb750b2dcb217e54f4b0d517739e28e31"   />
-  <project name="android_external_crosvm" path="external/crosvm" revision="1c532857bbf23b13b6c6d34f79999d2f29be08c4"   />
-  <project name="android_external_curl" path="external/curl" revision="0eb317978b71cb38f970e4fda0c40276daf01c35"   />
-  <project name="android_external_dagger2" path="external/dagger2" revision="678a3d564813c41376a7ed56ac4e63acf4043346"   />
-  <project name="android_external_deqp" path="external/deqp" revision="78a7d2caf2b7a9157fdc472b215fa1fc9e10a3c4"   />
-  <project name="android_external_deqp-deps_SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers" revision="5bd3950caf5a1520543951ba22b7ce24baf10822"   />
-  <project name="android_external_deqp-deps_SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools" revision="f57cb35ed815bd3c4122c80320e5213d905ab288"   />
-  <project name="android_external_deqp-deps_amber" path="external/deqp-deps/amber" revision="a1915007cb5c5e54ac304d78230f9d7280ccb310"   />
-  <project name="android_external_deqp-deps_glslang" path="external/deqp-deps/glslang" revision="1f7fa079592f976b278233b4cdd80068288a78dd"   />
-  <project name="android_external_desugar" path="external/desugar" revision="5254fa239df6f2dd0771ad4bec180eae4b127324"   />
-  <project name="android_external_dexmaker" path="external/dexmaker" revision="9e115705753849a71d010af23f984a5aa560f0cb"   />
-  <project name="android_external_dlmalloc" path="external/dlmalloc" revision="3a9d0af27a9f8fe533931a9e7ca843fd8e5b54f1"   />
-  <project name="android_external_dng_sdk" path="external/dng_sdk" revision="b6815a19d102c5ba320fe8af86caea66286afc5b"   />
-  <project name="android_external_dnsmasq" path="external/dnsmasq" revision="8ec33f8ffe249a45f7bc57fb22ff679f68c48257"   />
-  <project name="android_external_doclava" path="external/doclava" revision="baa68d6a1871e312e9193521eda9dcb5f44db10f"   />
-  <project name="platform/external/dokka" remote="aosp" path="external/dokka" revision="fb76ba5407dbb6816dca6ba7b6d0e21d52c6e411"   />
-  <project name="android_external_drm_hwcomposer" path="external/drm_hwcomposer" revision="e6aedbde1d66fb03c078726fcb8eda55983bdb75"   />
-  <project name="android_external_drrickorang" path="external/drrickorang" revision="d75961c2b57446c5201e64707bd8146fc925e566"   />
-  <project name="android_external_dtc" path="external/dtc" revision="c7db36e4961918d5f0715984f6d28484e635ece3"   />
-  <project name="android_external_dynamic_depth" path="external/dynamic_depth" revision="82589497aa60f574ef747e82935fd6f3cad8109a"   />
-  <project name="android_external_e2fsprogs" path="external/e2fsprogs" revision="2dbfbf325fc81c4c16f76650ce399e65ae08c90b"   />
-  <project name="android_external_easymock" path="external/easymock" revision="afd503b419c6c25d6804e137f2642217f10ee980"   />
-  <project name="android_external_eigen" path="external/eigen" revision="d2f82e2d6fc7f1dabc1af902c4515d74330877c6"   />
-  <project name="android_external_elfutils" path="external/elfutils" revision="5f92182e496a66149ba09c92fe497135643663f5"   />
-  <project name="android_external_emma" path="external/emma" revision="c2aa4d22fc24295761a9c588836531a7b3d3d519"   />
-  <project name="android_external_error_prone" path="external/error_prone" revision="3501c38bc5248eec887a1bdccbabf53454483672"   />
-  <project name="android_external_ethtool" path="external/ethtool" revision="0ee4880d2be92d35541f7f15d48e50bde5d43d10"   />
-  <project name="android_external_exoplayer" path="external/exoplayer" revision="1367a0c6e60801c4f7d59184e9df476d1db2e2ce"   />
-  <project name="android_external_expat" path="external/expat" revision="787f5e14b289bbfb73d7544a03f4ea2c64d89b6b"   />
-  <project name="android_external_f2fs-tools" path="external/f2fs-tools" revision="75ec64039d6af9b04906b018c67342a6d2a09f1c"   />
-  <project name="android_external_fastrpc" path="external/fastrpc" revision="81249d5007dd3322a287878f64d961b834984f34"   />
-  <project name="android_external_fdlibm" path="external/fdlibm" revision="9b1875e1f9cb968e02b8a393e7ed230bd4f4062e"   />
-  <project name="android_external_fec" path="external/fec" revision="7049b92008752b4f939425ad91bf2aea86133216"   />
-  <project name="android_vendor_amlogic_common_external_ffmpeg" path="vendor/amlogic/common/external/ffmpeg" revision="2d8ab76b5d8a40ee92b12271f0530a40a25db2a2"  />
-  <project name="android_external_flac" path="external/flac" revision="f56f9a8401f82fdbc081e38d41e35db12a096118"   />
-  <project name="android_external_flatbuffers" path="external/flatbuffers" revision="1912eaaff49449e66eed1a76ede387f8be68d0ca"   />
-  <project name="android_external_fmtlib" path="external/fmtlib" revision="aa6fa3aa882afe47f7af990b0c6d747a01cd6104"   />
-  <project name="android_external_fonttools" path="external/fonttools" revision="375cb3ca5498f918169cf83acfb5abc6cd950495"   />
-  <project name="android_external_freetype" path="external/freetype" revision="346557a242f6aaf6371e7f6b5ac5b6f183e1f77d"   />
-  <project name="android_external_fsck_msdos" path="external/fsck_msdos" revision="0fa08a6c46cdee80aa054e27fec121808e6bb4e1"   />
-  <project name="android_external_fsverity-utils" path="external/fsverity-utils" revision="cc5e51366174ddd4580c78c9845d86e44586c034"   />
-  <project name="android_external_gemmlowp" path="external/gemmlowp" revision="f96628cfe2e070e73230e644721f3b8a8e1f7877"   />
-  <project name="android_external_gflags" path="external/gflags" revision="8703a3bf83f05149602c8aaed691a7be51a72816"   />
-  <project name="android_external_giflib" path="external/giflib" revision="341c85ed68d932afcdd4481d361d9c1e65b453e2"   />
-  <project name="android_external_glide" path="external/glide" revision="bd0082947a4c7b0058049c155d3c2517d462cc81"   />
-  <project name="android_external_golang-protobuf" path="external/golang-protobuf" revision="e58929c83073a51fed4c23b819175c649fddfa33"   />
-  <project name="android_external_google-benchmark" path="external/google-benchmark" revision="6e9b9330d4c6a1279ce715150fca8a6b7c8377c6"   />
-  <project name="platform/external/google-breakpad" remote="aosp" path="external/google-breakpad" revision="05728773737deb58a10cdbe29750152c13e400bf"   />
-  <project name="android_external_google-fonts_arbutus-slab" path="external/google-fonts/arbutus-slab" revision="573b99d69f31c4d485810b6ffca82657676bf269"   />
-  <project name="android_external_google-fonts_arvo" path="external/google-fonts/arvo" revision="b20f0dcb8affa1a19850f599e7c63741e76befc0"   />
-  <project name="android_external_google-fonts_barlow" path="external/google-fonts/barlow" revision="efc104d906ad165fdfdf7d5f7d1050c35ca6bdcb"   />
-  <project name="android_external_google-fonts_big-shoulders-text" path="external/google-fonts/big-shoulders-text" revision="a2053632354b20a1140cb2783b42c14515121cb3"   />
-  <project name="android_external_google-fonts_carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="533cb08bf58c00f2f8d257e6db0b9f37202016ac"   />
-  <project name="android_external_google-fonts_coming-soon" path="external/google-fonts/coming-soon" revision="161c1af751124ac73e21d48c630162dc753af803"   />
-  <project name="android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="a7e367ca6a33cd7a74df285fd88472b9da379868"   />
-  <project name="android_external_google-fonts_dancing-script" path="external/google-fonts/dancing-script" revision="213684b54283321a54976eb6ff54426ebbf9c5b4"   />
-  <project name="android_external_google-fonts_fraunces" path="external/google-fonts/fraunces" revision="b98b9c56cdb41d1b5f5c602357235a1762f6b899"   />
-  <project name="android_external_google-fonts_karla" path="external/google-fonts/karla" revision="3c029a135846c6d3402aea394601c8e89e36cb76"   />
-  <project name="android_external_google-fonts_lato" path="external/google-fonts/lato" revision="ba0c99db0bf7ba5fb45f2308f1bf1c1e685259bb"   />
-  <project name="android_external_google-fonts_lustria" path="external/google-fonts/lustria" revision="3a47268e4bff81e30c37a06c8092aeed16701acd"   />
-  <project name="android_external_google-fonts_rubik" path="external/google-fonts/rubik" revision="6e2bb32e2cf81324b6a484587ba838a1e42f8770"   />
-  <project name="android_external_google-fonts_source-sans-pro" path="external/google-fonts/source-sans-pro" revision="073b45bf14e356c84c11c01cda1678e5bbfc0411"   />
-  <project name="android_external_google-fonts_zilla-slab" path="external/google-fonts/zilla-slab" revision="f1a96df144ee083555bf37edb595b15d6c51f51c"   />
-  <project name="android_external_google-fruit" path="external/google-fruit" revision="57123c8a2477a4d99cb68c53d195e9fb428dd535"   />
-  <project name="android_external_google-styleguide" path="external/google-styleguide" revision="e8635854e4dd46c3ec9ea1490025a7d3f7ad5eae"   />
-  <project name="android_external_googletest" path="external/googletest" revision="783dd00b924f4676f31ff4b5da999e8f01a090a4"   />
-  <project name="android_external_gptfdisk" path="external/gptfdisk" revision="bcd7e1a740fed033fcb0d92274ad2e484f4fa96c"   />
-  <project name="android_external_grpc-grpc" path="external/grpc-grpc" revision="75bfcd05212333d0f4247865e3a61eaf6092d932"   />
-  <project name="android_external_grpc-grpc-java" path="external/grpc-grpc-java" revision="9b4f1a6db99b7cb7d46320e25e32317853b500dc"   />
-  <project name="android_external_guava" path="external/guava" revision="f68acb20fe2dbfb31dd6259fd0cf161f09d51701"   />
-  <project name="android_external_guice" path="external/guice" revision="daf6a962c15f7496c8f0d281a99479a53c0e114b"   />
-  <project name="android_external_gwp_asan" path="external/gwp_asan" revision="76e2fecf2dd8449ab4d636dc3e55f1be1d7a56d0"   />
-  <project name="android_external_hamcrest" path="external/hamcrest" revision="c24f6249abf1583a60f7b33ea29e321e8f15c586"   />
-  <project name="android_external_harfbuzz_ng" path="external/harfbuzz_ng" revision="ab5e62fefce126b4f299430f1327b33c9fe526e1"   />
-  <project name="android_external_honggfuzz" path="external/honggfuzz" revision="03bc7e514aac0c4c64a5bb978454aa2020695ac3"   />
-  <project name="android_external_hyphenation-patterns" path="external/hyphenation-patterns" revision="ac87c57f7beddbf5d5a50462508ce182f4fe72e8"   />
-  <project name="android_external_icu" path="external/icu" revision="7d24b8a6ac9f91d5b0c8d822cdfe795cff787de4"   />
-  <project name="android_external_igt-gpu-tools" path="external/igt-gpu-tools" revision="cb3381988ec1617f3d794162410c54bc5521a8ed"   />
-  <project name="android_external_image_io" path="external/image_io" revision="135f7c04ae98ce694efcfc6d9a0d2bc38f4c3653"   />
-  <project name="android_external_ims" path="external/ims" revision="988859f0f5fc41781020b8576fce7e1999ce5902"   />
-  <project name="android_external_iperf3" path="external/iperf3" revision="84c367eba8bd20381cbdf41a1945e3f7d0cc97fa"   />
-  <project name="android_external_iproute2" path="external/iproute2" revision="359545a6aeec28a25a0ba59f71320489bedfeaa9"   />
-  <project name="android_external_ipsec-tools" path="external/ipsec-tools" revision="21841d18260f3247c0189c5157169c862632f0ec"   />
-  <project name="android_external_iptables" path="external/iptables" revision="4cad24127f6b5800487bd1b660a8a68743e59e49"   />
-  <project name="android_external_iputils" path="external/iputils" revision="4647133b841a2d77044f4f78c85772968fb84c3a"   />
-  <project name="android_external_iw" path="external/iw" revision="948cf7974947823433758278292bd657ef140d42"   />
-  <project name="android_external_jacoco" path="external/jacoco" revision="824fbb7e21ff47001b31682152aecbade46d2193"   />
-  <project name="android_external_jarjar" path="external/jarjar" revision="51d1c00fbf88036d7bed00ddc455b3cd939dc74c"   />
-  <project name="android_external_javaparser" path="external/javaparser" revision="1151cfe383321b5d71dd3d32e595ffaa28bca7db"   />
-  <project name="android_external_javapoet" path="external/javapoet" revision="b3ebb5d8c63cdda55bb74b23d436a36a55191f68"   />
-  <project name="android_external_javasqlite" path="external/javasqlite" revision="c093f72b18ff45bd66c8884ef667399aa5891b9f"   />
-  <project name="android_external_jcommander" path="external/jcommander" revision="c4d97985b3787276d6b391510250246c9ca94541"   />
-  <project name="android_external_jdiff" path="external/jdiff" revision="8cfae805e056320128cc7e506c8eae24daccac0b"   />
-  <project name="android_external_jemalloc" path="external/jemalloc" revision="e3ff6769f8262841c98245e21b96dc67536759dc"   />
-  <project name="android_external_jemalloc_new" path="external/jemalloc_new" revision="45117afe65c48295ed9b987c4e99479f04f7de62"   />
-  <project name="android_external_jline" path="external/jline" revision="478835d3c4603b43c28feb80912ff33f2c6811a6"   />
-  <project name="android_external_jsilver" path="external/jsilver" revision="241cd1b197ee8e520aa6b04f277c3b29a2ff0fe4"   />
-  <project name="android_external_jsmn" path="external/jsmn" revision="da7fb9c17ab5e9a1c11beacc1c1ad460ee66bfe8"   />
-  <project name="android_external_jsoncpp" path="external/jsoncpp" revision="ceed690fefd71a34154781da01b3bb0294a486eb"   />
-  <project name="android_external_jsr305" path="external/jsr305" revision="2c190e46f7369a6bb2d79b78a11ffb5e932d819d"   />
-  <project name="android_external_jsr330" path="external/jsr330" revision="4221d13d2c4079d3299c1d3265ed93564b84c78b"   />
-  <project name="android_external_junit" path="external/junit" revision="2e771a25d8437246287c87d8045794c7f6968ec1"   />
-  <project name="android_external_junit-params" path="external/junit-params" revision="ed4bc1eedea9e248f690ed682e4bd1b65863268d"   />
-  <project name="android_external_kernel-headers" path="external/kernel-headers" revision="98de591de8a89211e0d97ce6da031ec142ee8b86"   />
-  <project name="android_external_kmod" path="external/kmod" revision="9271b26ce33f744b2f0d3dde6ed9609e345cc710"   />
-  <project name="android_external_kotlinc" path="external/kotlinc" revision="451272f744c49c47efa1a96238e911ca1a013d1b"   />
-  <project name="android_external_kotlinx.coroutines" path="external/kotlinx.coroutines" revision="ad50cea75fbf4cf484d5016efb8f1295d748c1e7"   />
-  <project name="android_external_ksoap2" path="external/ksoap2" revision="35e0997508e99f0a5ca60de58a0f1a9df891698e"   />
-  <project name="android_external_libaom" path="external/libaom" revision="f2f715adc8ff1f168e9140d4e481dea76e7fcb76"   />
-  <project name="android_external_libavc" path="external/libavc" revision="b599fb7253e5005047987b3c59a37e0b13cef0da"   />
-  <project name="android_external_libbackup" path="external/libbackup" revision="2141bb48d626369da6313aac930939b8faa83226"   />
-  <project name="android_external_libbrillo" path="external/libbrillo" revision="9e260fa59a43bc04701216c51053922d445fefd8"   />
-  <project name="android_external_libcap" path="external/libcap" revision="7e0408acfb03a3119541557b82ba3f8d28d5e78e"   />
-  <project name="android_external_libcap-ng" path="external/libcap-ng" revision="e17ed85e2a3b4691efd6975a02f8e56277cc93af"   />
-  <project name="android_external_libchrome" path="external/libchrome" revision="e871b0b6badd9c8b977f470badb533b78a2812d5"   />
-  <project name="android_external_libcups" path="external/libcups" revision="ec1d84749a5fd324539e0ddc991359d348800aae"   />
-  <project name="android_external_libcxx" path="external/libcxx" revision="a15eefdd3872e1cee0a5b490bfa9573784cbee5f"   />
-  <project name="android_external_libcxxabi" path="external/libcxxabi" revision="e3c7223a009074e8d6b57d56757851ede7d8ab07"   />
-  <project name="android_external_libdaemon" path="external/libdaemon" revision="433dd14cb58a66737e158ad1331c02162a80f43f"   />
-  <project name="android_external_libdivsufsort" path="external/libdivsufsort" revision="abb3a16c4986c5f7dda62580c4f53c1930d4d1b9"   />
-  <project name="android_external_libdrm" path="external/libdrm" revision="9d5089ee87931edcf5ba01949e0a11cf1a52b471"   />
-  <project name="android_external_libepoxy" path="external/libepoxy" revision="8f53ca38c16e91d11888e129069443d795f37fdb"   />
-  <project name="android_external_libese" path="external/libese" revision="127c3cd569dcb5fe47d3b420086d30853d0361da"   />
-  <project name="android_external_libevent" path="external/libevent" revision="e2ad30a2c0dd53cef7fd37e5336407938b64da26"   />
-  <project name="android_external_libexif" path="external/libexif" revision="3ae16840a14cff1f5a37fe8c3711a8d336eac6af"   />
-  <project name="android_external_libffi" path="external/libffi" revision="346fc30ba1b84cca643e0d970175358d79554d8c"   />
-  <project name="android_external_libfuse" path="external/libfuse" revision="dfbcbb8fa1ab5367cc307a8a28069c5c91593be3"   />
-  <project name="android_external_libgav1" path="external/libgav1" revision="55d9a9d137d33ed3d1f8f79dfe8a72213e8319c2"   />
-  <project name="android_external_libgsm" path="external/libgsm" revision="2822c44a30e0d109492b3e96f128409ec2ed5fc9"   />
-  <project name="android_external_libhevc" path="external/libhevc" revision="4ebe5e099840d030dffdf578e0aa8183a915f39a"   />
-  <project name="android_external_libiio" path="external/libiio" revision="8fcb4fb5c580bfd9121dd8ddb93d4eb907d23f9e"   />
-  <project name="android_external_libjpeg-turbo" path="external/libjpeg-turbo" revision="1e6fe4a709c68d079128ee150006a5eea8156d69"   />
-  <project name="android_external_libkmsxx" path="external/libkmsxx" revision="b3dedeaa7107178b3f577cc986c91113c92e8edd"   />
-  <project name="android_external_libldac" path="external/libldac" revision="93195ee38bd08ea8d9f87cbfa550635923f213de"   />
-  <project name="android_external_libmpeg2" path="external/libmpeg2" revision="92caa89837f5ffa4085fb6d8014f5e6c07067eb4"   />
-  <project name="android_external_libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="a44a0c25fa5eb2575df464bd4d9e3e5c7da9ccf6"   />
-  <project name="android_external_libnfnetlink" path="external/libnfnetlink" revision="ac537e1d43625a99d8b266a362f4735762a42b66"   />
-  <project name="android_external_libnl" path="external/libnl" revision="eaf0ff4b41b655449a4098f8cceacb74cb7cacce"   />
-  <project name="android_external_libogg" path="external/libogg" revision="9ade11b9e2782651747306dff43a9b553c94203a"   />
-  <project name="android_external_libopus" path="external/libopus" revision="91bf556330e514c5a43d5dd5202b9570db940e2b"   />
-  <project name="android_external_libpcap" path="external/libpcap" revision="a534481a0cee14a9c4cd4bcb0a2aa7fff7a6c7a1"   />
-  <project name="android_external_libphonenumber" path="external/libphonenumber" revision="ebe83670878bfd616c86d8a4d9b8cde00a6e9d38"   />
-  <project name="android_external_libpng" path="external/libpng" revision="9e1f873b22bba8158573ff47b69131603e56743d"   />
-  <project name="android_external_libprotobuf-mutator" path="external/libprotobuf-mutator" revision="829b4113d970aeec2fcb6acecd3631624c48acd4"   />
-  <project name="android_external_libsrtp2" path="external/libsrtp2" revision="1904160d088401788daf6b5d1130819f087ff946"   />
-  <project name="android_external_libtextclassifier" path="external/libtextclassifier" revision="b82ba94b6eb041fe54afbe1043e4301aa3102086"   />
-  <project name="android_external_libunwind" path="external/libunwind" revision="279b6f9c5e6b5fade1ecb2c50b4c773a29fe384c"   />
-  <project name="android_external_libunwind_llvm" path="external/libunwind_llvm" revision="b015df41c165ab31a0a63ff1319ef14dd7d52e7a"   />
-  <project name="android_external_libusb" path="external/libusb" revision="e486a629e38d567d271f38f50deeccdac6b7fc62"   />
-  <project name="android_external_libutf" path="external/libutf" revision="a767ddfc5e962aa166c36fca4da613a8be989806"   />
-  <project name="android_external_libvpx" path="external/libvpx" revision="fb526136f84d4a8952b279080069f09ed5525ace"   />
-  <project name="android_external_libvterm" path="external/libvterm" revision="2caab416f758b648c4034e9f22cb7b76c37203f0"   />
-  <project name="android_external_libxaac" path="external/libxaac" revision="895c0e3e32383913d7ec79ef3a9c0405f236885f"   />
-  <project name="android_external_libxkbcommon" path="external/libxkbcommon" revision="52016fde3e9beb9d1f67cd905635847eb73f8a16"   />
-  <project name="android_external_libxml2" path="external/libxml2" revision="8cc8f38db65c01f2489f67f10248cc4c6d05cb26"   />
-  <project name="android_external_libyuv" path="external/libyuv" revision="38bdba20e21285e60d6b0a0e534de4f7f21fb5da"   />
-  <project name="android_external_linux-kselftest" path="external/linux-kselftest" revision="96e90b20779b769488086463fd3db9d6a70744ea"    />
-  <project name="android_external_llvm" path="external/llvm" revision="f7b5e7df8e0fedad229c0bcc6798789fc50d818b"   />
-  <project name="android_external_lmfit" path="external/lmfit" revision="3d36ea54c2216475d5e21da31ee0db4af24ebed1"   />
-  <project name="android_external_ltp" path="external/ltp" revision="b506acbca227f177bf3534ff0b32404078c000fb"   />
-  <project name="android_external_lua" path="external/lua" revision="afada5cde35988a386b820bb9b2d2b09130a828e"   />
-  <project name="android_external_lz4" path="external/lz4" revision="fdd43c66dd9e77283aa8f7e52a881be44d622441"   />
-  <project name="android_external_lzma" path="external/lzma" revision="7ad0c1013f4666f8c9d088e0c6893a86057f5ebd"   />
-  <project name="android_external_markdown" path="external/markdown" revision="41a03193095447f4ff110690171574ed8b721292"   />
-  <project name="android_external_mdnsresponder" path="external/mdnsresponder" revision="249adc6ec6ee7399c95e9a79c8858d809990e53b"   />
-  <project name="android_external_mesa3d" path="external/mesa3d" revision="d4fb5a1181848c941a7d2b7e106e0bea5846f5a1"   />
-  <project name="android_external_mime-support" path="external/mime-support" revision="8c4635bb418118ef654d961fba112f8b9e746d8a"   />
-  <project name="android_external_minigbm" path="external/minigbm" revision="a3120e47088d7b898acca9ee55825ccbc03f427c"   />
-  <project name="android_external_minijail" path="external/minijail" revision="13c257bca9a38043781672af3b7df4c5ede1c268"   />
-  <project name="android_external_mksh" path="external/mksh" revision="2dbe5442614d5e73ba8ac27b141196ef48df6a23"   />
-  <project name="android_external_mockftpserver" path="external/mockftpserver" revision="1f487440520b7264f9134079441bce0adcf05af0"   />
-  <project name="android_external_mockito" path="external/mockito" revision="c63bd7149ae1c6599c4174fe734247a12cf5ec35"   />
-  <project name="android_external_mockwebserver" path="external/mockwebserver" revision="afc120010a63fcce78a03104376c7fcd7d406baf"   />
-  <project name="android_external_modp_b64" path="external/modp_b64" revision="4eb713e802be7d2b2f1cd37f91d04ae5c40d05f4"   />
-  <project name="android_external_mp4parser" path="external/mp4parser" revision="91052b1c78aaf57b0db28a0b1e4f7b91e5d8fda6"   />
-  <project name="android_external_mtpd" path="external/mtpd" revision="26ef32a27635e278731f958c1b9559e43c8ce851"   />
-  <project name="android_external_nanohttpd" path="external/nanohttpd" revision="9e6fdd3de9cf7ebc3a16c614147a28e63e62485e"   />
-  <project name="android_external_nanopb-c" path="external/nanopb-c" revision="7a527b438b50a517645be2b876259121118bda39"   />
-  <project name="android_external_naver-fonts" path="external/naver-fonts" revision="37ba854a88b1721057585111c7a1d7e5fd02b556"   />
-  <project name="android_external_neon_2_sse" path="external/neon_2_sse" revision="7dff91633c4faf01e78427a0d1626853d96289ab"   />
-  <project name="android_external_neven" path="external/neven" revision="c0157fe840c0abf28e594a9324b36d1e53e002a3"   />
-  <project name="android_external_newfs_msdos" path="external/newfs_msdos" revision="6cbd5a634d77914c907cdc00b5bb9fdb1fbc438d"   />
-  <project name="android_external_nfacct" path="external/nfacct" revision="da41b2d4c2089f96a7fcb81a8b686046e635da7d"   />
-  <project name="android_external_nist-pkits" path="external/nist-pkits" revision="ceb84ee20207625eb009872960834e6a6c98ad46"   />
-  <project name="android_external_nist-sip" path="external/nist-sip" revision="d0a7687d3a0fff06ea6c1fe7d11cbff9864beb99"   />
-  <project name="android_external_nos_host_generic" path="external/nos/host/generic" revision="bdebcb9732a65279e293da192f4d4ead882719ef"   />
-  <project name="android_external_noto-fonts" path="external/noto-fonts" revision="2e3109cedcc757a2fb05d8983eb6f8183b9d6d8b"   />
-  <project name="android_external_oauth" path="external/oauth" revision="2f79a0fdace446afd17a6b539b391be92214fd47"   />
-  <project name="android_external_objenesis" path="external/objenesis" revision="170bfdd5ca3fdbd2a3a99ce825dca3382e307bbf"   />
-  <project name="android_external_oj-libjdwp" path="external/oj-libjdwp" revision="34fcbf5b3d1adc494d9f723d8640d4965a1a171a"   />
-  <project name="android_external_okhttp" path="external/okhttp" revision="1a1f1cbbbd7a0e012383ea3690158732d6627749"   />
-  <project name="android_external_one-true-awk" path="external/one-true-awk" revision="48afa534d75dba2b93756044b41226417fdfca5d"   />
-  <project name="android_external_opencensus-java" path="external/opencensus-java" revision="610a17c2139830070c0dc56540d35aeb64222ec7"   />
-  <project name="android_external_openssh" path="external/openssh" revision="cb697871c774d360cc895c9bd22da5c8449a5187"   />
-  <project name="android_external_oss-fuzz" path="external/oss-fuzz" revision="fc25fcf0519e5da3d5acfea27eadaa9ccffaef55"   />
-  <project name="android_external_owasp_sanitizer" path="external/owasp/sanitizer" revision="264347ba9499b19a1bf991308c47ad5d8f5a547c"   />
-  <project name="android_external_parameter-framework" path="external/parameter-framework" revision="c676f15f0e814b5ab32e62400c703bcd0f3b5c4e"   />
-  <project name="android_external_pcre" path="external/pcre" revision="7fed2aa21aec621cd8c3c27261fae910b9bd8ad7"   />
-  <project name="android_external_pdfium" path="external/pdfium" revision="28a4b160ec7f645f5fa83318c798abb611b37419"   />
-  <project name="android_external_perfetto" path="external/perfetto" revision="ebd225166c38471ff00734ff8bb46218f9282830"   />
-  <project name="android_external_piex" path="external/piex" revision="6ff91ae0acacf741dd12b217460ea843b738eb1a"   />
-  <project name="android_external_ply" path="external/ply" revision="21c343dd3b9c717de2ec122a943214c5f70d154e"   />
-  <project name="android_external_ppp" path="external/ppp" revision="6f3028b98ebf97f6f5224a2e900a26a214726ef7"   />
-  <project name="android_external_proguard" path="external/proguard" revision="4049237427905fe053ec217c082ce222f9edc814"   />
-  <project name="android_external_protobuf" path="external/protobuf" revision="4cf85c8d29ec12c3f5d2bd43d6e3c4e8755a47a1"   />
-  <project name="android_external_psimd" path="external/psimd" revision="38ff772f60dd2fba919dc8bebb9c349364c1a61a"   />
-  <project name="android_external_pthreadpool" path="external/pthreadpool" revision="7c44d52f24ec6160ed832c4b51139819f844ad0f"   />
-  <project name="android_external_puffin" path="external/puffin" revision="f41ef119872c6595e7711ca9346131eb8d40ac8f"   />
-  <project name="android_external_python_apitools" path="external/python/apitools" revision="2b23d118222109ef59376b69d15cf366dcbecad5"   />
-  <project name="android_external_python_asn1crypto" path="external/python/asn1crypto" revision="f9bf9b4162753bac4752faab67bd082e57c6145f"   />
-  <project name="android_external_python_cffi" path="external/python/cffi" revision="a0c2438c7a883c23642177532ad8228d7b666de4"   />
-  <project name="android_external_python_cpython2" path="external/python/cpython2" revision="4ecd9450778988240cdfa9b2721750a433cec969"   />
-  <project name="android_external_python_cpython3" path="external/python/cpython3" revision="de73b7ba33a73ae5cba35a3be7809153b030e91d"   />
-  <project name="android_external_python_cryptography" path="external/python/cryptography" revision="5039a1c7df356db2877ae4ecc44a28d32a9466a7"   />
-  <project name="android_external_python_dateutil" path="external/python/dateutil" revision="9390706c7578702a91e88a74cf388072e67afaf7"   />
-  <project name="android_external_python_enum34" path="external/python/enum34" revision="de9878e3b12f11d41ae97ee16c62ac7dcbb8e69f"   />
-  <project name="android_external_python_funcsigs" path="external/python/funcsigs" revision="6b9dcff686b5f367aaac114d21055a505a86d81c"   />
-  <project name="android_external_python_futures" path="external/python/futures" revision="89a8fe6ab75db54c27ab073acda54b57b3a1187b"   />
-  <project name="android_external_python_google-api-python-client" path="external/python/google-api-python-client" revision="4c93867c0a194da55c6e6958046754aa70fbc2f0"   />
-  <project name="android_external_python_httplib2" path="external/python/httplib2" revision="31f091c0ae1c78c65214d8c6c94938e00fe9f6e2"   />
-  <project name="android_external_python_ipaddress" path="external/python/ipaddress" revision="aebf8ebdf7d40de96a0d5865c99d4102bd0c1fdb"   />
-  <project name="android_external_python_mock" path="external/python/mock" revision="2955fbc6ae54f18375684e1d933c83907978f92f"   />
-  <project name="android_external_python_oauth2client" path="external/python/oauth2client" revision="48bbe85f5376bdd485cbe92d8abea459c31d6034"   />
-  <project name="android_external_python_parse_type" path="external/python/parse_type" revision="b3dec94033e2397772f630e456ee4ed148da0b49"   />
-  <project name="android_external_python_pyasn1" path="external/python/pyasn1" revision="3840362825124737bc1b9fb4bf45f937de64fb38"   />
-  <project name="android_external_python_pyasn1-modules" path="external/python/pyasn1-modules" revision="c340f08f61bbea0a35f7030eba6c67b93cbd43e2"   />
-  <project name="android_external_python_pybind11" path="external/python/pybind11" revision="f4b2b5240ecede571187e9931ea9483041d5ceb7"   />
-  <project name="android_external_python_pycparser" path="external/python/pycparser" revision="24385e7bc2d202bae209c86bcc9ade41b09078ba"   />
-  <project name="android_external_python_pyopenssl" path="external/python/pyopenssl" revision="751caf63d05da8477d934da5c05316ddeb4f64de"   />
-  <project name="android_external_python_rsa" path="external/python/rsa" revision="50feeefb8baf91ea1f81ba16428c270706f6d1ca"   />
-  <project name="android_external_python_setuptools" path="external/python/setuptools" revision="513ec3d6bb6f7786d02caf51720497a118b8f4be"   />
-  <project name="android_external_python_six" path="external/python/six" revision="bc5b71ea687cbe1a5675215e617d1f4b310cc4e5"   />
-  <project name="android_external_python_uritemplates" path="external/python/uritemplates" revision="e9b8a40534df1b0de66ee1d6581ce657a6f9eee9"   />
-  <project name="android_external_rappor" path="external/rappor" revision="24abc025df68928ce97749b18521c4dbfa3faaf7"   />
-  <project name="android_external_replicaisland" path="external/replicaisland" revision="ea2fbe6a4828e8a4214ece603dab08804bb3bee4"   />
-  <project name="android_external_rmi4utils" path="external/rmi4utils" revision="eab13882ca581b5ef579eeeca311957f5fa2eada"   />
-  <project name="android_external_robolectric-shadows" path="external/robolectric-shadows" revision="863497a024c900950994ac667dec1cd3ae3d85f7"   />
-  <project name="android_external_roboto-fonts" path="external/roboto-fonts" revision="2f81b268a6ea2caf870350532ba02ff6b81b314d"   />
-  <project name="android_external_rootdev" path="external/rootdev" revision="2b38487945c95283b77047a5470aa750af02f847"   />
-  <project name="android_external_rust_crates_byteorder" path="external/rust/crates/byteorder" revision="821d2a074bc11e3cd81c9156702d3ec6fb5f2228"   />
-  <project name="android_external_rust_crates_libc" path="external/rust/crates/libc" revision="c3ced644b99c79d6a58a4dd4d699d3ef58ea972e"   />
-  <project name="android_external_rust_crates_proc-macro2" path="external/rust/crates/proc-macro2" revision="45943aac7f749005c0bcfb530e48de2e7c0f1c9c"   />
-  <project name="android_external_rust_crates_quote" path="external/rust/crates/quote" revision="a78d493bdbb465c11c6ff31b08fa4213b1cba79c"   />
-  <project name="android_external_rust_crates_remain" path="external/rust/crates/remain" revision="dc3071e3317ddbac7633c7438ee98a41398e62af"   />
-  <project name="android_external_rust_crates_syn" path="external/rust/crates/syn" revision="83d3986cfea93b8928487b3c5967c4f72c8d5111"   />
-  <project name="android_external_rust_crates_unicode-xid" path="external/rust/crates/unicode-xid" revision="cdb47aff23056cc7b8bd46a5dcc51fdd23734080"   />
-  <project name="android_external_scapy" path="external/scapy" revision="2c6d26c6fc374a6b26b012ff4523a24e903d8329"   />
-  <project name="android_external_scrypt" path="external/scrypt" revision="d6114db148b1ededd120de0cf2d1fc73ba1611ac"   />
-  <project name="android_external_scudo" path="external/scudo" revision="1741d9d6434ad601d76a405177b38743f0b3ea3d"   />
-  <project name="android_external_seccomp-tests" path="external/seccomp-tests" revision="2795191f28591534096193bf5a92124367786b88"   />
-  <project name="android_external_selinux" path="external/selinux" revision="0731e73364dec7a4859acbe03c6c1fa3a06bf10d"   />
-  <project name="android_external_setupcompat" path="external/setupcompat" revision="2dcf5f96bf0a8174978f1e6e22babef489c698b3"   />
-  <project name="android_external_setupdesign" path="external/setupdesign" revision="09a5e8e0fbb8585fad96f6646b847ef3d7d3e77c"   />
-  <project name="android_external_sfntly" path="external/sfntly" revision="a9a48a4ed3826e4e1fe33cf0642febe0172e8890"   />
-  <project name="android_external_shaderc_spirv-headers" path="external/shaderc/spirv-headers" revision="ee39ac64341b0c3d85a1299973988285f2f350de"   />
-  <project name="android_external_shflags" path="external/shflags" revision="6d6812d19da2747fdbee25421af1bd3583d75bf0"   />
-  <project name="android_external_skia" path="external/skia" revision="51fbc42ed65894831b2b6eedc43b657112da0f07"   />
-  <project name="android_external_skqp" path="external/skqp" revision="21e70f4e18c18e2e7049abc7e3b4974798cc017c"    />
-  <project name="android_external_sl4a" path="external/sl4a" revision="6c77ff7f51d1175e94fbb03af86e5a06ac519f82"   />
-  <project name="android_external_slf4j" path="external/slf4j" revision="4cd3f35de15e9270f3d5822c3f04a7c2b02189ea"   />
-  <project name="android_external_smali" path="external/smali" revision="aff0371ad4c54034cb84f48e170367bb787cd5f2"   />
-  <project name="android_external_snakeyaml" path="external/snakeyaml" revision="5df2ff5ed7c5eebfaff21a8299019e21f648b0f6"   />
-  <project name="android_external_sonic" path="external/sonic" revision="043398f5c456fc78cd8f5f2057e3a2e767eebfca"   />
-  <project name="android_external_sonivox" path="external/sonivox" revision="13d074e19a60a79aa70dff72b266ac4a161ff89c"   />
-  <project name="android_external_speex" path="external/speex" revision="999f3e21f50ac6531cdee4e7bcb5feeb6e2392e0"   />
-  <project name="android_external_sqlite" path="external/sqlite" revision="6fcdb944a9e22e97ebb2323071fcb4a7220e7869"   />
-  <project name="android_external_squashfs-tools" path="external/squashfs-tools" revision="26929f59a759b06cb01c539ba45630958a8e3a76"   />
-  <project name="android_external_strace" path="external/strace" revision="f1cb53780e02e7a9112b4aa53a132cae53a1fa15"   />
-  <project name="android_external_stressapptest" path="external/stressapptest" revision="4d151d9e70555f617bd5c8859d9b3857be31fde3"   />
-  <project name="android_external_subsampling-scale-image-view" path="external/subsampling-scale-image-view" revision="5fb46aa47bd8d0ca763b7f17033a6f842e57d4f9"    />
-  <project name="android_external_swiftshader" path="external/swiftshader" revision="f5c5d50a2e69e7c66715eff7c53c6abb07acc827"   />
-  <project name="android_external_tagsoup" path="external/tagsoup" revision="62d766e91ae3052534f8cf5c68f4321045f12c58"   />
-  <project name="android_external_tcpdump" path="external/tcpdump" revision="f50b8b00f4d40eaaeb7e0e3a398d441d27e63d54"   />
-  <project name="android_external_tensorflow" path="external/tensorflow" revision="c3d31c8f43e0c8ca62cd84ecdf3fe2d06f0bdf44"   />
-  <project name="android_external_testng" path="external/testng" revision="74aac3e648e789b5f462bd42debc34a16507dbad"   />
-  <project name="android_external_tinyalsa" path="external/tinyalsa" revision="bb72d52a81b8fa58c43681edd057430887b050a4"   />
-  <project name="android_external_tinycompress" path="external/tinycompress" revision="58529d0f1086e737c8055fef387f7791c94bffbd"   />
-  <project name="android_external_tinyxml" path="external/tinyxml" revision="30b01f5b6ece6c5204d46f6b2ea90745dbc69826"   />
-  <project name="android_external_tinyxml2" path="external/tinyxml2" revision="1b7e9f45b916fdafad6a450244d6d30735b075db"   />
-  <project name="android_external_toolchain-utils" path="external/toolchain-utils" revision="b75f321fc8978b92ce3db6886ccb966768f0c7a8"  />
-  <project name="android_external_toybox" path="external/toybox" revision="10ca1faaf8d4c473c84d202eae3d4c13bbfcc311"   />
-  <project name="android_external_i2c-tools" path="external/i2c-tools" revision="0bd91bc72493a6af67efa57aa33ad30b5f32b353"   />
-  <project name="android_external_tremolo" path="external/tremolo" revision="627c18b2a7bf3ec133736149895140cd54f571d6"   />
-  <project name="android_external_turbine" path="external/turbine" revision="c6fb3b925e3e7c9dbf8324105097988c75b69c2b"   />
-  <project name="android_external_u-boot" path="external/u-boot" revision="b47bcd97279db87270593c2396ef9717abbd249d"   />
-  <project name="android_external_ukey2" path="external/ukey2" revision="cd9c844bd676ff9ff69a74bc49e157149a7f0918"   />
-  <project name="android_external_unicode" path="external/unicode" revision="73a232bd327d0180c24e20dbc441016386c13ef1"   />
-  <project name="android_external_universal-tween-engine" path="external/universal-tween-engine" revision="37a0007888efb1fc8b4d360d4e0560c03e55e5eb"  />
-  <project name="android_external_v4l2_codec2" path="external/v4l2_codec2" revision="8dd31366197efe009359684ff3b4b39ddc88b55c"   />
-  <project name="android_external_v8" path="external/v8" revision="f8e155bf678ded36f74190a339ea220c18b89875"   />
-  <project name="android_external_vboot_reference" path="external/vboot_reference" revision="df6d6b6e5280520b096fb1f565b758948bc872ee"   />
-  <project name="android_external_virglrenderer" path="external/virglrenderer" revision="420c9e3d834eb6698c821a6d023a0dad63cc8b7e"   />
-  <project name="android_external_vixl" path="external/vixl" revision="c150fd7455f6f3520efe35ac6b24854ecc5b3a70"   />
-  <project name="android_external_vogar" path="external/vogar" revision="28704bea251866d1438d60b59dcf090f446ffdc6"   />
-  <project name="android_external_volley" path="external/volley" revision="5c532a6de0f207c1d42c3ef5578b82f46c8641d1"   />
-  <project name="android_external_vulkan-headers" path="external/vulkan-headers" revision="0e0fe8825a3c6dc19470647ff7987c06a5b87087"   />
-  <project name="android_external_vulkan-validation-layers" path="external/vulkan-validation-layers" revision="a2f99966439b03c57a5e5071e9e28601c04e8918"   />
-  <project name="android_external_walt" path="external/walt" revision="154a2ccc4de6d8ce8e513f47e83900f0db2a6383"   />
-  <project name="android_external_wayland" path="external/wayland" revision="5c83f965ac8bbe0aca11fb77e377121223c624e5"   />
-  <project name="android_external_wayland-protocols" path="external/wayland-protocols" revision="ef003a5e13cff44a9b9bc0e081e8851378e5e067"   />
-  <project name="android_external_webp" path="external/webp" revision="5b8ffe46a0fbf17592104c3a7d85a1074b868bcc"   />
-  <project name="android_external_webrtc" path="external/webrtc" revision="661e84967bb2600427cb65715caeeba112b94244"   />
-  <project name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" revision="bb03019c0bbf6f57b839c4a40a2c6c3b130c7607"   />
-  <project name="android_external_wycheproof" path="external/wycheproof" revision="1b808efc7c903b0eaae0da8f6788f55513e4e339"   />
-  <project name="android_external_xmp_toolkit" path="external/xmp_toolkit" revision="44d7e4d00ef6da63a75bf3a4f9296872cc4d2ac1"   />
-  <project name="android_external_xz-embedded" path="external/xz-embedded" revision="51923a98b0af813e3db6a027d64471ee8710a4f2"   />
-  <project name="android_external_xz-java" path="external/xz-java" revision="bd7892bb8927360cd34805bc332039154a2110e0"   />
-  <project name="android_external_yapf" path="external/yapf" revision="45d923c40605a71867d174abcd04a1db76945651"   />
-  <project name="android_external_zlib" path="external/zlib" revision="1a9b432817192342bbfb5a389058a45eea9f816c"   />
-  <project name="android_external_zopfli" path="external/zopfli" revision="4e42ccafb7c571f502a23177bca2d3cfc209035c"   />
-  <project name="android_external_zxing" path="external/zxing" revision="65193280855e46d11bf5b44f1a7e49ec0c7bd57e"   />
-  <project name="android_frameworks_av" path="frameworks/av" revision="721078958dde4d1bf98f235e8ae4dbe791168f40"   />
-  <project name="android_frameworks_base" path="frameworks/base" revision="0dea6493800c491287dc98e415349a254ab4766d"   />
-  <project name="android_frameworks_compile_libbcc" path="frameworks/compile/libbcc" revision="fff6169b647b9c5d60350923019e8d60449a3652"   />
-  <project name="android_frameworks_compile_mclinker" path="frameworks/compile/mclinker" revision="c7e43705055a74fd97f481fd31dddd8b9e307c4a"   />
-  <project name="android_frameworks_compile_slang" path="frameworks/compile/slang" revision="122ad4e102004cbf3bdc2b6f62b0d41aaa293541"   />
-  <project name="android_frameworks_ex" path="frameworks/ex" revision="5050934c425fa1c775d31a1c2ab7bbe6f8fe5bc6"   />
-  <project name="android_frameworks_hardware_interfaces" path="frameworks/hardware/interfaces" revision="99d0fe7f2059d05f8450fdc73ef5b3629edd6a85"   />
-  <project name="android_frameworks_layoutlib" path="frameworks/layoutlib" revision="93611f7fb37d89512b7005534013b10f9acc28a4"   />
-  <project name="android_frameworks_libs_modules-utils" path="frameworks/libs/modules-utils" revision="410b53b14010a7af14b1091bf53aae46d7a97912"   />
-  <project name="android_frameworks_libs_native_bridge_support" path="frameworks/libs/native_bridge_support" revision="23a16f52811d120802ee06555c9c8d0b6cd78cf7"   />
-  <project name="android_frameworks_libs_net" path="frameworks/libs/net" revision="3c1c253e01577c3563ce2806f6ca6dbd7400d927"   />
-  <project name="android_frameworks_libs_systemui" path="frameworks/libs/systemui" revision="4fcec24e32031a44800b7706c3ec1fc54e90f8bb"   />
-  <project name="android_frameworks_minikin" path="frameworks/minikin" revision="e95e6db870c14937d78d074d2b57e2b3bc7cd43f"   />
-  <project name="android_frameworks_ml" path="frameworks/ml" revision="381f232947171f7181b7c1a8b81b681fc2980bd5"   />
-  <project name="android_frameworks_multidex" path="frameworks/multidex" revision="e60bb86cd116127913fe8f4872d7846852627ffb"   />
-  <project name="android_frameworks_native" path="frameworks/native" revision="a067df40f541300c65645bc63507cdae5f6fd5c7"   />
-  <project name="android_frameworks_opt_bitmap" path="frameworks/opt/bitmap" revision="e9850af1278e499e427d08dbf40244f3622bd6db"   />
-  <project name="android_frameworks_opt_calendar" path="frameworks/opt/calendar" revision="6e29ad1dfe9b353af1c41a30101673bf01d7a144"   />
-  <project name="android_frameworks_opt_car_services" path="frameworks/opt/car/services" revision="1e9fefe101c2ba7eb70a007e38701b3ecdf2fff0"   />
-  <project name="android_frameworks_opt_car_setupwizard" path="frameworks/opt/car/setupwizard" revision="297e55df0cdc7eb6c176dedfa269b0a7e7bedda3"   />
-  <project name="android_frameworks_opt_chips" path="frameworks/opt/chips" revision="d5a7b7c4fd4c003a931d27d94cab727681c6c862"   />
-  <project name="android_frameworks_opt_colorpicker" path="frameworks/opt/colorpicker" revision="e39d8b0ad631c643d0ea3f0312808eb1bf055d34"   />
-  <project name="android_frameworks_opt_localepicker" path="frameworks/opt/localepicker" revision="43f19d66c3f874dc97520c4231e03cbda7e80c9a"  />
-  <project name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" revision="2783aea74132661aa2ac726a64189b55a159077e"   />
-  <project name="android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" revision="216c2cbf20bd852ea4cd9d433c7c0cc6af1bd7cd"   />
-  <project name="android_frameworks_opt_net_voip" path="frameworks/opt/net/voip" revision="9407bdc83741274b6b740c6f4a584079c96c388c"   />
-  <project name="android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" revision="cd02ac16c3c1ff0a616d32734f7a5f10fa8d9b3c"   />
-  <project name="android_frameworks_opt_photoviewer" path="frameworks/opt/photoviewer" revision="32528080536d5d676fbc96fefac2195180a2b2b8"   />
-  <project name="android_frameworks_opt_setupwizard" path="frameworks/opt/setupwizard" revision="8d2737e20a56addbf718aba9bc9bdc0c38e8c236"   />
-  <project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="b206b57fe40673e5dabbc7701715494ffefd4d3d"   />
-  <project name="android_frameworks_opt_timezonepicker" path="frameworks/opt/timezonepicker" revision="835446953befaeb301ea9b354114ff21e17a067f"   />
-  <project name="android_frameworks_opt_tv_tvsystem" path="frameworks/opt/tv/tvsystem" revision="1c99e79a6de9d0a7df92d52f2779a95b9cbe8145"   />
-  <project name="android_frameworks_opt_vcard" path="frameworks/opt/vcard" revision="88212b105552d2b5f0a142d9c9eda33d74a7aaac"   />
-  <project name="android_frameworks_rs" path="frameworks/rs" revision="01689c8e82906f71aca7d03bb7adf55928372680"   />
-  <project name="android_frameworks_wilhelm" path="frameworks/wilhelm" revision="d27b5331dc2923934020c40da8052581902d5892"   />
-  <project name="android_hardware_amlogic" path="hardware/amlogic" revision="37a75763a8b1ed231b443546af40784e9f6a8d28"  />
-  <project name="android_hardware_amlogic_aucpu_fw" path="hardware/amlogic/aucpu_fw" revision="d4c055294786288046e60de47275710c0f2826df"  />
-  <project name="android_hardware_amlogic_gralloc" path="hardware/amlogic/gralloc" revision="fb50b273e233adb8f1389c04b72103feec4feba4"  />
-  <project name="android_hardware_amlogic_hwcomposer" path="hardware/amlogic/hwcomposer" revision="83c5a7ad56986c23ba9f5f17e9ceb81392879aed"  />
-  <project name="android_hardware_amlogic_media_modules" path="hardware/amlogic/media_modules" revision="7cf846d35d1a46e50d161a3d49b19e84b6bbfcb2"  />
-  <project name="android_hardware_amlogic_tuner" path="hardware/amlogic/tuner" revision="87c849598c8dde4f1f04b75d0c3d92f6cdeffbbb"  />
-  <project name="android_vendor_amlogic_common_gpu" path="vendor/amlogic/common/gpu" revision="51396133d4571dbfb820798f783c998f9e65e767"  />
-  <project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" revision="a7191619f320c9c48c0cfc376996ca2836c7a799"   />
-  <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" revision="8f608ec0b9a7f9464c7681721ad18bd3bfd65104"   />
-  <project name="android_hardware_google_apf" path="hardware/google/apf" revision="8e3611df8bb66b87dad2e73e5485b5aa49602a24"   />
-  <project name="android_hardware_google_av" path="hardware/google/av" revision="1322f13349b64287f663db5dfcdb49083cead1ea"   />
-  <project name="android_hardware_google_camera" path="hardware/google/camera" revision="65ffbfcad41f76951a24feefa11761ed47f78ae7"   />
-  <project name="android_hardware_google_easel" path="hardware/google/easel" revision="068aa473eab7cc0521c1b01668fdadb98b5e11f1"   />
-  <project name="android_hardware_google_interfaces" path="hardware/google/interfaces" revision="7fd0e6a8712b9c2b83ee66dc92b6bd11205bcfa2"   />
-  <project name="android_hardware_google_pixel" path="hardware/google/pixel" revision="70cb04c2dee30755daa4612f56ba7e1444e63b75"   />
-  <project name="android_hardware_google_pixel-sepolicy" path="hardware/google/pixel-sepolicy" revision="9ccce372be84c211ffc33961a632fb75920a1c9b"   />
-  <project name="android_hardware_interfaces" path="hardware/interfaces" revision="e7cb492bb835010b3d35496676200250b3b4697e"   />
-  <project name="android_hardware_knowles_athletico_sound_trigger_hal" path="hardware/knowles/athletico/sound_trigger_hal" revision="b6329f2f04d9264dde3217f283a4a0dd78d4789b"   />
-  <project name="android_hardware_libhardware" path="hardware/libhardware" revision="6fccab1d892da9c6e58a0dfbe5aa99788d186a32"   />
-  <project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="22f705057482747bd4b7c5f3e9d60a12a4558257"   />
-  <project name="android_hardware_qcom_bootctrl" path="hardware/qcom/bootctrl" revision="fa2d1b6724d73525a3018317e2d3826ab0549fcf"   />
-  <project name="android_hardware_qcom_msm8x09" path="hardware/qcom/msm8x09" revision="c88c67109844def18fef4941e39bebb8f8981e39"   />
-  <project name="android_hardware_qcom_sdm845_bt" path="hardware/qcom/sdm845/bt" revision="29c8a55bb6e521089ebd80a64afc893f8822aad2"   />
-  <project name="android_hardware_qcom_sdm845_data_ipacfg-mgr" path="hardware/qcom/sdm845/data/ipacfg-mgr" revision="ba108d83b07216db03cd4139145383408fac6772"   >
+  <project name="android_compatibility_cdd" path="compatibility/cdd" />
+  <project name="platform/cts" remote="aosp" path="cts" />
+  <project name="android_dalvik" path="dalvik" />
+  <project name="android_developers_build" path="developers/build" />
+  <project name="android_developers_demos" path="developers/demos" />
+  <project name="android_developers_samples_android" path="developers/samples/android" />
+  <project name="android_development" path="development" />
+  <project name="android_external_FP16" path="external/FP16" />
+  <project name="android_external_FXdiv" path="external/FXdiv" />
+  <project name="android_external_ImageMagick" path="external/ImageMagick" />
+  <project name="android_external_OpenCL-CTS" path="external/OpenCL-CTS" />
+  <project name="android_external_OpenCSD" path="external/OpenCSD" />
+  <project name="android_external_Reactive-Extensions_RxCpp" path="external/Reactive-Extensions/RxCpp" />
+  <project name="android_external_XNNPACK" path="external/XNNPACK" />
+  <project name="android_external_aac" path="external/aac" />
+  <project name="android_external_adeb" path="external/adeb" />
+  <project name="android_external_adhd" path="external/adhd" />
+  <project name="android_external_android-clat" path="external/android-clat" />
+  <project name="android_external_androidplot" path="external/androidplot" />
+  <project name="android_external_angle" path="external/angle" />
+  <project name="android_external_ant-glob" path="external/ant-glob" />
+  <project name="android_external_antlr" path="external/antlr" />
+  <project name="android_external_apache-commons-bcel" path="external/apache-commons-bcel" />
+  <project name="android_external_apache-commons-compress" path="external/apache-commons-compress" />
+  <project name="android_external_apache-commons-math" path="external/apache-commons-math" />
+  <project name="android_external_apache-harmony" path="external/apache-harmony" />
+  <project name="android_external_apache-http" path="external/apache-http" />
+  <project name="android_external_apache-xml" path="external/apache-xml" />
+  <project name="android_external_arm-neon-tests" path="external/arm-neon-tests" />
+  <project name="android_external_arm-optimized-routines" path="external/arm-optimized-routines" />
+  <project name="android_external_arm-trusted-firmware" path="external/arm-trusted-firmware" />
+  <project name="android_external_autotest" path="external/autotest" />
+  <project name="android_external_avb" path="external/avb" />
+  <project name="android_external_bc" path="external/bc" />
+  <project name="android_external_bcc" path="external/bcc" />
+  <project name="android_external_blktrace" path="external/blktrace" />
+  <project name="android_external_boringssl" path="external/boringssl" />
+  <project name="android_external_bouncycastle" path="external/bouncycastle" />
+  <project name="android_external_brotli" path="external/brotli" />
+  <project name="android_external_bsdiff" path="external/bsdiff" />
+  <project name="android_external_bzip2" path="external/bzip2" />
+  <project name="android_external_caliper" path="external/caliper" />
+  <project name="android_external_capstone" path="external/capstone" />
+  <project name="android_external_catch2" path="external/catch2" />
+  <project name="android_external_cblas" path="external/cblas" />
+  <project name="android_external_cbor-java" path="external/cbor-java" />
+  <project name="android_external_chromium-libpac" path="external/chromium-libpac" />
+  <project name="android_external_chromium-trace" path="external/chromium-trace" />
+  <project remote="aosp" name="platform/external/chromium-webview" path="external/chromium-webview" />
+  <project name="android_external_clang" path="external/clang" />
+  <project name="android_external_cldr" path="external/cldr" />
+  <project name="android_external_cn-cbor" path="external/cn-cbor" />
+  <project name="android_external_compiler-rt" path="external/compiler-rt" />
+  <project name="android_external_conscrypt" path="external/conscrypt" />
+  <project name="android_external_cpu_features" path="external/cpu_features" />
+  <project name="android_external_cpuinfo" path="external/cpuinfo" />
+  <project name="android_external_crcalc" path="external/crcalc" />
+  <project name="android_external_cros_system_api" path="external/cros/system_api" />
+  <project name="android_external_crosvm" path="external/crosvm" />
+  <project name="android_external_curl" path="external/curl" />
+  <project name="android_external_dagger2" path="external/dagger2" />
+  <project name="android_external_deqp" path="external/deqp" />
+  <project name="android_external_deqp-deps_SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers" />
+  <project name="android_external_deqp-deps_SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools" />
+  <project name="android_external_deqp-deps_amber" path="external/deqp-deps/amber" />
+  <project name="android_external_deqp-deps_glslang" path="external/deqp-deps/glslang" />
+  <project name="android_external_desugar" path="external/desugar" />
+  <project name="android_external_dexmaker" path="external/dexmaker" />
+  <project name="android_external_dlmalloc" path="external/dlmalloc" />
+  <project name="android_external_dng_sdk" path="external/dng_sdk" />
+  <project name="android_external_dnsmasq" path="external/dnsmasq" />
+  <project name="android_external_doclava" path="external/doclava" />
+  <project name="platform/external/dokka" remote="aosp" path="external/dokka" />
+  <project name="android_external_drm_hwcomposer" path="external/drm_hwcomposer" />
+  <project name="android_external_drrickorang" path="external/drrickorang" />
+  <project name="android_external_dtc" path="external/dtc" />
+  <project name="android_external_dynamic_depth" path="external/dynamic_depth" />
+  <project name="android_external_e2fsprogs" path="external/e2fsprogs" />
+  <project name="android_external_easymock" path="external/easymock" />
+  <project name="android_external_eigen" path="external/eigen" />
+  <project name="android_external_elfutils" path="external/elfutils" />
+  <project name="android_external_emma" path="external/emma" />
+  <project name="android_external_error_prone" path="external/error_prone" />
+  <project name="android_external_ethtool" path="external/ethtool" />
+  <project name="android_external_exoplayer" path="external/exoplayer" />
+  <project name="android_external_expat" path="external/expat" />
+  <project name="android_external_f2fs-tools" path="external/f2fs-tools" />
+  <project name="android_external_fastrpc" path="external/fastrpc" />
+  <project name="android_external_fdlibm" path="external/fdlibm" />
+  <project name="android_external_fec" path="external/fec" />
+  <project name="android_vendor_amlogic_common_external_ffmpeg" path="vendor/amlogic/common/external/ffmpeg" />
+  <project name="android_external_flac" path="external/flac" />
+  <project name="android_external_flatbuffers" path="external/flatbuffers" />
+  <project name="android_external_fmtlib" path="external/fmtlib" />
+  <project name="android_external_fonttools" path="external/fonttools" />
+  <project name="android_external_freetype" path="external/freetype" />
+  <project name="android_external_fsck_msdos" path="external/fsck_msdos" />
+  <project name="android_external_fsverity-utils" path="external/fsverity-utils" />
+  <project name="android_external_gemmlowp" path="external/gemmlowp" />
+  <project name="android_external_gflags" path="external/gflags" />
+  <project name="android_external_giflib" path="external/giflib" />
+  <project name="android_external_glide" path="external/glide" />
+  <project name="android_external_golang-protobuf" path="external/golang-protobuf" />
+  <project name="android_external_google-benchmark" path="external/google-benchmark" />
+  <project name="platform/external/google-breakpad" remote="aosp" path="external/google-breakpad" />
+  <project name="android_external_google-fonts_arbutus-slab" path="external/google-fonts/arbutus-slab" />
+  <project name="android_external_google-fonts_arvo" path="external/google-fonts/arvo" />
+  <project name="android_external_google-fonts_barlow" path="external/google-fonts/barlow" />
+  <project name="android_external_google-fonts_big-shoulders-text" path="external/google-fonts/big-shoulders-text" />
+  <project name="android_external_google-fonts_carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" />
+  <project name="android_external_google-fonts_coming-soon" path="external/google-fonts/coming-soon" />
+  <project name="android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" />
+  <project name="android_external_google-fonts_dancing-script" path="external/google-fonts/dancing-script" />
+  <project name="android_external_google-fonts_fraunces" path="external/google-fonts/fraunces" />
+  <project name="android_external_google-fonts_karla" path="external/google-fonts/karla" />
+  <project name="android_external_google-fonts_lato" path="external/google-fonts/lato" />
+  <project name="android_external_google-fonts_lustria" path="external/google-fonts/lustria" />
+  <project name="android_external_google-fonts_rubik" path="external/google-fonts/rubik" />
+  <project name="android_external_google-fonts_source-sans-pro" path="external/google-fonts/source-sans-pro" />
+  <project name="android_external_google-fonts_zilla-slab" path="external/google-fonts/zilla-slab" />
+  <project name="android_external_google-fruit" path="external/google-fruit" />
+  <project name="android_external_google-styleguide" path="external/google-styleguide" />
+  <project name="android_external_googletest" path="external/googletest" />
+  <project name="android_external_gptfdisk" path="external/gptfdisk" />
+  <project name="android_external_grpc-grpc" path="external/grpc-grpc" />
+  <project name="android_external_grpc-grpc-java" path="external/grpc-grpc-java" />
+  <project name="android_external_guava" path="external/guava" />
+  <project name="android_external_guice" path="external/guice" />
+  <project name="android_external_gwp_asan" path="external/gwp_asan" />
+  <project name="android_external_hamcrest" path="external/hamcrest" />
+  <project name="android_external_harfbuzz_ng" path="external/harfbuzz_ng" />
+  <project name="android_external_honggfuzz" path="external/honggfuzz" />
+  <project name="android_external_hyphenation-patterns" path="external/hyphenation-patterns" />
+  <project name="android_external_icu" path="external/icu" />
+  <project name="android_external_igt-gpu-tools" path="external/igt-gpu-tools" />
+  <project name="android_external_image_io" path="external/image_io" />
+  <project name="android_external_ims" path="external/ims" />
+  <project name="android_external_iperf3" path="external/iperf3" />
+  <project name="android_external_iproute2" path="external/iproute2" />
+  <project name="android_external_ipsec-tools" path="external/ipsec-tools" />
+  <project name="android_external_iptables" path="external/iptables" />
+  <project name="android_external_iputils" path="external/iputils" />
+  <project name="android_external_iw" path="external/iw" />
+  <project name="android_external_jacoco" path="external/jacoco" />
+  <project name="android_external_jarjar" path="external/jarjar" />
+  <project name="android_external_javaparser" path="external/javaparser" />
+  <project name="android_external_javapoet" path="external/javapoet" />
+  <project name="android_external_javasqlite" path="external/javasqlite" />
+  <project name="android_external_jcommander" path="external/jcommander" />
+  <project name="android_external_jdiff" path="external/jdiff" />
+  <project name="android_external_jemalloc" path="external/jemalloc" />
+  <project name="android_external_jemalloc_new" path="external/jemalloc_new" />
+  <project name="android_external_jline" path="external/jline" />
+  <project name="android_external_jsilver" path="external/jsilver" />
+  <project name="android_external_jsmn" path="external/jsmn" />
+  <project name="android_external_jsoncpp" path="external/jsoncpp" />
+  <project name="android_external_jsr305" path="external/jsr305" />
+  <project name="android_external_jsr330" path="external/jsr330" />
+  <project name="android_external_junit" path="external/junit" />
+  <project name="android_external_junit-params" path="external/junit-params" />
+  <project name="android_external_kernel-headers" path="external/kernel-headers" />
+  <project name="android_external_kmod" path="external/kmod" />
+  <project name="android_external_kotlinc" path="external/kotlinc" />
+  <project name="android_external_kotlinx.coroutines" path="external/kotlinx.coroutines" />
+  <project name="android_external_ksoap2" path="external/ksoap2" />
+  <project name="android_external_libaom" path="external/libaom" />
+  <project name="android_external_libavc" path="external/libavc" />
+  <project name="android_external_libbackup" path="external/libbackup" />
+  <project name="android_external_libbrillo" path="external/libbrillo" />
+  <project name="android_external_libcap" path="external/libcap" />
+  <project name="android_external_libcap-ng" path="external/libcap-ng" />
+  <project name="android_external_libchrome" path="external/libchrome" />
+  <project name="android_external_libcups" path="external/libcups" />
+  <project name="android_external_libcxx" path="external/libcxx" />
+  <project name="android_external_libcxxabi" path="external/libcxxabi" />
+  <project name="android_external_libdaemon" path="external/libdaemon" />
+  <project name="android_external_libdivsufsort" path="external/libdivsufsort" />
+  <project name="android_external_libdrm" path="external/libdrm" />
+  <project name="android_external_libepoxy" path="external/libepoxy" />
+  <project name="android_external_libese" path="external/libese" />
+  <project name="android_external_libevent" path="external/libevent" />
+  <project name="android_external_libexif" path="external/libexif" />
+  <project name="android_external_libffi" path="external/libffi" />
+  <project name="android_external_libfuse" path="external/libfuse" />
+  <project name="android_external_libgav1" path="external/libgav1" />
+  <project name="android_external_libgsm" path="external/libgsm" />
+  <project name="android_external_libhevc" path="external/libhevc" />
+  <project name="android_external_libiio" path="external/libiio" />
+  <project name="android_external_libjpeg-turbo" path="external/libjpeg-turbo" />
+  <project name="android_external_libkmsxx" path="external/libkmsxx" />
+  <project name="android_external_libldac" path="external/libldac" />
+  <project name="android_external_libmpeg2" path="external/libmpeg2" />
+  <project name="android_external_libnetfilter_conntrack" path="external/libnetfilter_conntrack" />
+  <project name="android_external_libnfnetlink" path="external/libnfnetlink" />
+  <project name="android_external_libnl" path="external/libnl" />
+  <project name="android_external_libogg" path="external/libogg" />
+  <project name="android_external_libopus" path="external/libopus" />
+  <project name="android_external_libpcap" path="external/libpcap" />
+  <project name="android_external_libphonenumber" path="external/libphonenumber" />
+  <project name="android_external_libpng" path="external/libpng" />
+  <project name="android_external_libprotobuf-mutator" path="external/libprotobuf-mutator" />
+  <project name="android_external_libsrtp2" path="external/libsrtp2" />
+  <project name="android_external_libtextclassifier" path="external/libtextclassifier" />
+  <project name="android_external_libunwind" path="external/libunwind" />
+  <project name="android_external_libunwind_llvm" path="external/libunwind_llvm" />
+  <project name="android_external_libusb" path="external/libusb" />
+  <project name="android_external_libutf" path="external/libutf" />
+  <project name="android_external_libvpx" path="external/libvpx" />
+  <project name="android_external_libvterm" path="external/libvterm" />
+  <project name="android_external_libxaac" path="external/libxaac" />
+  <project name="android_external_libxkbcommon" path="external/libxkbcommon" />
+  <project name="android_external_libxml2" path="external/libxml2" />
+  <project name="android_external_libyuv" path="external/libyuv" />
+  <project name="android_external_linux-kselftest" path="external/linux-kselftest" />
+  <project name="android_external_llvm" path="external/llvm" />
+  <project name="android_external_lmfit" path="external/lmfit" />
+  <project name="android_external_ltp" path="external/ltp" />
+  <project name="android_external_lua" path="external/lua" />
+  <project name="android_external_lz4" path="external/lz4" />
+  <project name="android_external_lzma" path="external/lzma" />
+  <project name="android_external_markdown" path="external/markdown" />
+  <project name="android_external_mdnsresponder" path="external/mdnsresponder" />
+  <project name="android_external_mesa3d" path="external/mesa3d" />
+  <project name="android_external_mime-support" path="external/mime-support" />
+  <project name="android_external_minigbm" path="external/minigbm" />
+  <project name="android_external_minijail" path="external/minijail" />
+  <project name="android_external_mksh" path="external/mksh" />
+  <project name="android_external_mockftpserver" path="external/mockftpserver" />
+  <project name="android_external_mockito" path="external/mockito" />
+  <project name="android_external_mockwebserver" path="external/mockwebserver" />
+  <project name="android_external_modp_b64" path="external/modp_b64" />
+  <project name="android_external_mp4parser" path="external/mp4parser" />
+  <project name="android_external_mtpd" path="external/mtpd" />
+  <project name="android_external_nanohttpd" path="external/nanohttpd" />
+  <project name="android_external_nanopb-c" path="external/nanopb-c" />
+  <project name="android_external_naver-fonts" path="external/naver-fonts" />
+  <project name="android_external_neon_2_sse" path="external/neon_2_sse" />
+  <project name="android_external_neven" path="external/neven" />
+  <project name="android_external_newfs_msdos" path="external/newfs_msdos" />
+  <project name="android_external_nfacct" path="external/nfacct" />
+  <project name="android_external_nist-pkits" path="external/nist-pkits" />
+  <project name="android_external_nist-sip" path="external/nist-sip" />
+  <project name="android_external_nos_host_generic" path="external/nos/host/generic" />
+  <project name="android_external_noto-fonts" path="external/noto-fonts" />
+  <project name="android_external_oauth" path="external/oauth" />
+  <project name="android_external_objenesis" path="external/objenesis" />
+  <project name="android_external_oj-libjdwp" path="external/oj-libjdwp" />
+  <project name="android_external_okhttp" path="external/okhttp" />
+  <project name="android_external_one-true-awk" path="external/one-true-awk" />
+  <project name="android_external_opencensus-java" path="external/opencensus-java" />
+  <project name="android_external_openssh" path="external/openssh" />
+  <project name="android_external_oss-fuzz" path="external/oss-fuzz" />
+  <project name="android_external_owasp_sanitizer" path="external/owasp/sanitizer" />
+  <project name="android_external_parameter-framework" path="external/parameter-framework" />
+  <project name="android_external_pcre" path="external/pcre" />
+  <project name="android_external_pdfium" path="external/pdfium" />
+  <project name="android_external_perfetto" path="external/perfetto" />
+  <project name="android_external_piex" path="external/piex" />
+  <project name="android_external_ply" path="external/ply" />
+  <project name="android_external_ppp" path="external/ppp" />
+  <project name="android_external_proguard" path="external/proguard" />
+  <project name="android_external_protobuf" path="external/protobuf" />
+  <project name="android_external_psimd" path="external/psimd" />
+  <project name="android_external_pthreadpool" path="external/pthreadpool" />
+  <project name="android_external_puffin" path="external/puffin" />
+  <project name="android_external_python_apitools" path="external/python/apitools" />
+  <project name="android_external_python_asn1crypto" path="external/python/asn1crypto" />
+  <project name="android_external_python_cffi" path="external/python/cffi" />
+  <project name="android_external_python_cpython2" path="external/python/cpython2" />
+  <project name="android_external_python_cpython3" path="external/python/cpython3" />
+  <project name="android_external_python_cryptography" path="external/python/cryptography" />
+  <project name="android_external_python_dateutil" path="external/python/dateutil" />
+  <project name="android_external_python_enum34" path="external/python/enum34" />
+  <project name="android_external_python_funcsigs" path="external/python/funcsigs" />
+  <project name="android_external_python_futures" path="external/python/futures" />
+  <project name="android_external_python_google-api-python-client" path="external/python/google-api-python-client" />
+  <project name="android_external_python_httplib2" path="external/python/httplib2" />
+  <project name="android_external_python_ipaddress" path="external/python/ipaddress" />
+  <project name="android_external_python_mock" path="external/python/mock" />
+  <project name="android_external_python_oauth2client" path="external/python/oauth2client" />
+  <project name="android_external_python_parse_type" path="external/python/parse_type" />
+  <project name="android_external_python_pyasn1" path="external/python/pyasn1" />
+  <project name="android_external_python_pyasn1-modules" path="external/python/pyasn1-modules" />
+  <project name="android_external_python_pybind11" path="external/python/pybind11" />
+  <project name="android_external_python_pycparser" path="external/python/pycparser" />
+  <project name="android_external_python_pyopenssl" path="external/python/pyopenssl" />
+  <project name="android_external_python_rsa" path="external/python/rsa" />
+  <project name="android_external_python_setuptools" path="external/python/setuptools" />
+  <project name="android_external_python_six" path="external/python/six" />
+  <project name="android_external_python_uritemplates" path="external/python/uritemplates" />
+  <project name="android_external_rappor" path="external/rappor" />
+  <project name="android_external_replicaisland" path="external/replicaisland" />
+  <project name="android_external_rmi4utils" path="external/rmi4utils" />
+  <project name="android_external_robolectric-shadows" path="external/robolectric-shadows" />
+  <project name="android_external_roboto-fonts" path="external/roboto-fonts" />
+  <project name="android_external_rootdev" path="external/rootdev" />
+  <project name="android_external_rust_crates_byteorder" path="external/rust/crates/byteorder" />
+  <project name="android_external_rust_crates_libc" path="external/rust/crates/libc" />
+  <project name="android_external_rust_crates_proc-macro2" path="external/rust/crates/proc-macro2" />
+  <project name="android_external_rust_crates_quote" path="external/rust/crates/quote" />
+  <project name="android_external_rust_crates_remain" path="external/rust/crates/remain" />
+  <project name="android_external_rust_crates_syn" path="external/rust/crates/syn" />
+  <project name="android_external_rust_crates_unicode-xid" path="external/rust/crates/unicode-xid" />
+  <project name="android_external_scapy" path="external/scapy" />
+  <project name="android_external_scrypt" path="external/scrypt" />
+  <project name="android_external_scudo" path="external/scudo" />
+  <project name="android_external_seccomp-tests" path="external/seccomp-tests" />
+  <project name="android_external_selinux" path="external/selinux" />
+  <project name="android_external_setupcompat" path="external/setupcompat" />
+  <project name="android_external_setupdesign" path="external/setupdesign" />
+  <project name="android_external_sfntly" path="external/sfntly" />
+  <project name="android_external_shaderc_spirv-headers" path="external/shaderc/spirv-headers" />
+  <project name="android_external_shflags" path="external/shflags" />
+  <project name="android_external_skia" path="external/skia" />
+  <project name="android_external_skqp" path="external/skqp" />
+  <project name="android_external_sl4a" path="external/sl4a" />
+  <project name="android_external_slf4j" path="external/slf4j" />
+  <project name="android_external_smali" path="external/smali" />
+  <project name="android_external_snakeyaml" path="external/snakeyaml" />
+  <project name="android_external_sonic" path="external/sonic" />
+  <project name="android_external_sonivox" path="external/sonivox" />
+  <project name="android_external_speex" path="external/speex" />
+  <project name="android_external_sqlite" path="external/sqlite" />
+  <project name="android_external_squashfs-tools" path="external/squashfs-tools" />
+  <project name="android_external_strace" path="external/strace" />
+  <project name="android_external_stressapptest" path="external/stressapptest" />
+  <project name="android_external_subsampling-scale-image-view" path="external/subsampling-scale-image-view" />
+  <project name="android_external_swiftshader" path="external/swiftshader" />
+  <project name="android_external_tagsoup" path="external/tagsoup" />
+  <project name="android_external_tcpdump" path="external/tcpdump" />
+  <project name="android_external_tensorflow" path="external/tensorflow" />
+  <project name="android_external_testng" path="external/testng" />
+  <project name="android_external_tinyalsa" path="external/tinyalsa" />
+  <project name="android_external_tinycompress" path="external/tinycompress" />
+  <project name="android_external_tinyxml" path="external/tinyxml" />
+  <project name="android_external_tinyxml2" path="external/tinyxml2" />
+  <project name="android_external_toolchain-utils" path="external/toolchain-utils" />
+  <project name="android_external_toybox" path="external/toybox" />
+  <project name="android_external_i2c-tools" path="external/i2c-tools" />
+  <project name="android_external_tremolo" path="external/tremolo" />
+  <project name="android_external_turbine" path="external/turbine" />
+  <project name="android_external_u-boot" path="external/u-boot" />
+  <project name="android_external_ukey2" path="external/ukey2" />
+  <project name="android_external_unicode" path="external/unicode" />
+  <project name="android_external_universal-tween-engine" path="external/universal-tween-engine" />
+  <project name="android_external_v4l2_codec2" path="external/v4l2_codec2" />
+  <project name="android_external_v8" path="external/v8" />
+  <project name="android_external_vboot_reference" path="external/vboot_reference" />
+  <project name="android_external_virglrenderer" path="external/virglrenderer" />
+  <project name="android_external_vixl" path="external/vixl" />
+  <project name="android_external_vogar" path="external/vogar" />
+  <project name="android_external_volley" path="external/volley" />
+  <project name="android_external_vulkan-headers" path="external/vulkan-headers" />
+  <project name="android_external_vulkan-validation-layers" path="external/vulkan-validation-layers" />
+  <project name="android_external_walt" path="external/walt" />
+  <project name="android_external_wayland" path="external/wayland" />
+  <project name="android_external_wayland-protocols" path="external/wayland-protocols" />
+  <project name="android_external_webp" path="external/webp" />
+  <project name="android_external_webrtc" path="external/webrtc" />
+  <project name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" />
+  <project name="android_external_wycheproof" path="external/wycheproof" />
+  <project name="android_external_xmp_toolkit" path="external/xmp_toolkit" />
+  <project name="android_external_xz-embedded" path="external/xz-embedded" />
+  <project name="android_external_xz-java" path="external/xz-java" />
+  <project name="android_external_yapf" path="external/yapf" />
+  <project name="android_external_zlib" path="external/zlib" />
+  <project name="android_external_zopfli" path="external/zopfli" />
+  <project name="android_external_zxing" path="external/zxing" />
+  <project name="android_frameworks_av" path="frameworks/av" />
+  <project name="android_frameworks_base" path="frameworks/base" />
+  <project name="android_frameworks_compile_libbcc" path="frameworks/compile/libbcc" />
+  <project name="android_frameworks_compile_mclinker" path="frameworks/compile/mclinker" />
+  <project name="android_frameworks_compile_slang" path="frameworks/compile/slang" />
+  <project name="android_frameworks_ex" path="frameworks/ex" />
+  <project name="android_frameworks_hardware_interfaces" path="frameworks/hardware/interfaces" />
+  <project name="android_frameworks_layoutlib" path="frameworks/layoutlib" />
+  <project name="android_frameworks_libs_modules-utils" path="frameworks/libs/modules-utils" />
+  <project name="android_frameworks_libs_native_bridge_support" path="frameworks/libs/native_bridge_support" />
+  <project name="android_frameworks_libs_net" path="frameworks/libs/net" />
+  <project name="android_frameworks_libs_systemui" path="frameworks/libs/systemui" />
+  <project name="android_frameworks_minikin" path="frameworks/minikin" />
+  <project name="android_frameworks_ml" path="frameworks/ml" />
+  <project name="android_frameworks_multidex" path="frameworks/multidex" />
+  <project name="android_frameworks_native" path="frameworks/native" />
+  <project name="android_frameworks_opt_bitmap" path="frameworks/opt/bitmap" />
+  <project name="android_frameworks_opt_calendar" path="frameworks/opt/calendar" />
+  <project name="android_frameworks_opt_car_services" path="frameworks/opt/car/services" />
+  <project name="android_frameworks_opt_car_setupwizard" path="frameworks/opt/car/setupwizard" />
+  <project name="android_frameworks_opt_chips" path="frameworks/opt/chips" />
+  <project name="android_frameworks_opt_colorpicker" path="frameworks/opt/colorpicker" />
+  <project name="android_frameworks_opt_localepicker" path="frameworks/opt/localepicker" />
+  <project name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" />
+  <project name="android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" />
+  <project name="android_frameworks_opt_net_voip" path="frameworks/opt/net/voip" />
+  <project name="android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" />
+  <project name="android_frameworks_opt_photoviewer" path="frameworks/opt/photoviewer" />
+  <project name="android_frameworks_opt_setupwizard" path="frameworks/opt/setupwizard" />
+  <project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
+  <project name="android_frameworks_opt_timezonepicker" path="frameworks/opt/timezonepicker" />
+  <project name="android_frameworks_opt_tv_tvsystem" path="frameworks/opt/tv/tvsystem" />
+  <project name="android_frameworks_opt_vcard" path="frameworks/opt/vcard" />
+  <project name="android_frameworks_rs" path="frameworks/rs" />
+  <project name="android_frameworks_wilhelm" path="frameworks/wilhelm" />
+  <project name="android_hardware_amlogic" path="hardware/amlogic" />
+  <project name="android_hardware_amlogic_aucpu_fw" path="hardware/amlogic/aucpu_fw" />
+  <project name="android_hardware_amlogic_gralloc" path="hardware/amlogic/gralloc" />
+  <project name="android_hardware_amlogic_hwcomposer" path="hardware/amlogic/hwcomposer" />
+  <project name="android_hardware_amlogic_media_modules" path="hardware/amlogic/media_modules" />
+  <project name="android_hardware_amlogic_tuner" path="hardware/amlogic/tuner" />
+  <project name="android_vendor_amlogic_common_gpu" path="vendor/amlogic/common/gpu" />
+  <project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" />
+  <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" />
+  <project name="android_hardware_google_apf" path="hardware/google/apf" />
+  <project name="android_hardware_google_av" path="hardware/google/av" />
+  <project name="android_hardware_google_camera" path="hardware/google/camera" />
+  <project name="android_hardware_google_easel" path="hardware/google/easel" />
+  <project name="android_hardware_google_interfaces" path="hardware/google/interfaces" />
+  <project name="android_hardware_google_pixel" path="hardware/google/pixel" />
+  <project name="android_hardware_google_pixel-sepolicy" path="hardware/google/pixel-sepolicy" />
+  <project name="android_hardware_interfaces" path="hardware/interfaces" />
+  <project name="android_hardware_knowles_athletico_sound_trigger_hal" path="hardware/knowles/athletico/sound_trigger_hal" />
+  <project name="android_hardware_libhardware" path="hardware/libhardware" />
+  <project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" />
+  <project name="android_hardware_qcom_bootctrl" path="hardware/qcom/bootctrl" />
+  <project name="android_hardware_qcom_msm8x09" path="hardware/qcom/msm8x09" />
+  <project name="android_hardware_qcom_sdm845_bt" path="hardware/qcom/sdm845/bt" />
+  <project name="android_hardware_qcom_sdm845_data_ipacfg-mgr" path="hardware/qcom/sdm845/data/ipacfg-mgr" >
     <linkfile dest="hardware/qcom/sdm845/Android.mk" src="os_pickup.mk"/>
     <linkfile dest="hardware/qcom/sdm845/Android.bp" src="os_pickup.bp"/>
   </project>
-  <project name="android_hardware_qcom_sdm845_display" path="hardware/qcom/sdm845/display" revision="c3d15c4344b02459dddbd8f210fdbbde3b889175"   />
-  <project name="android_hardware_qcom_sdm845_gps" path="hardware/qcom/sdm845/gps" revision="9f0dc650bbe3db9769ccb4035bfe01fd41d72376"   />
-  <project name="android_hardware_qcom_sdm845_media" path="hardware/qcom/sdm845/media" revision="ac972a6108eb41c1e03f439e6b836c4b19a2b549"   />
-  <project name="android_hardware_qcom_sdm845_thermal" path="hardware/qcom/sdm845/thermal" revision="08972b2fe3179702d6f052f90e49d68b702395dc"   />
-  <project name="android_hardware_qcom_sdm845_vr" path="hardware/qcom/sdm845/vr" revision="0e06489f538d99656ba2594d1d1aa6f24ba825f4"   />
-  <project name="android_hardware_qcom_sm7150_gps" path="hardware/qcom/sm7150/gps" revision="5b483a0c54d7d167a1219593ff6270f1f5c6bfca"   >
+  <project name="android_hardware_qcom_sdm845_display" path="hardware/qcom/sdm845/display" />
+  <project name="android_hardware_qcom_sdm845_gps" path="hardware/qcom/sdm845/gps" />
+  <project name="android_hardware_qcom_sdm845_media" path="hardware/qcom/sdm845/media" />
+  <project name="android_hardware_qcom_sdm845_thermal" path="hardware/qcom/sdm845/thermal" />
+  <project name="android_hardware_qcom_sdm845_vr" path="hardware/qcom/sdm845/vr" />
+  <project name="android_hardware_qcom_sm7150_gps" path="hardware/qcom/sm7150/gps" >
     <linkfile dest="hardware/qcom/sm7150/Android.mk" src="os_pickup.mk"/>
     <linkfile dest="hardware/qcom/sm7150/Android.bp" src="os_pickup.bp"/>
   </project>
-  <project name="android_hardware_qcom_sm7250_display" path="hardware/qcom/sm7250/display" revision="2f41755e5d22761b9d9045afb1c2da52ffd7dc60"   />
-  <project name="android_hardware_qcom_sm7250_gps" path="hardware/qcom/sm7250/gps" revision="0650a877ac5a34009d68c7f886cf8f4a7aacc5d2"   >
+  <project name="android_hardware_qcom_sm7250_display" path="hardware/qcom/sm7250/display" />
+  <project name="android_hardware_qcom_sm7250_gps" path="hardware/qcom/sm7250/gps" >
     <linkfile dest="hardware/qcom/sm7250/Android.mk" src="os_pickup.mk"/>
     <linkfile dest="hardware/qcom/sm7250/Android.bp" src="os_pickup.bp"/>
   </project>
-  <project name="android_hardware_qcom_sm7250_media" path="hardware/qcom/sm7250/media" revision="dfaaadf3e614822b121dccd4d27229f31b5dcd75"   />
-  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" revision="1fdc4e0e2bf50256fc6aa1d01f247f2aec3ba289"   >
+  <project name="android_hardware_qcom_sm7250_media" path="hardware/qcom/sm7250/media" />
+  <project name="android_hardware_qcom_sm8150_data_ipacfg-mgr" path="hardware/qcom/sm8150/data/ipacfg-mgr" >
     <linkfile dest="hardware/qcom/sm8150/Android.mk" src="os_pickup.mk"/>
     <linkfile dest="hardware/qcom/sm8150/Android.bp" src="os_pickup.bp"/>
   </project>
-  <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" revision="85776c41e315faae94c3b66b7b0822e813687d0e"   />
-  <project name="android_hardware_qcom_sm8150_gps" path="hardware/qcom/sm8150/gps" revision="e336e0427242dd38567788b94484a6eb6e5731b3"   />
-  <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" revision="3fd65d3a6e1623f07bc6c1b9d5cdbf296af7efad"   />
-  <project name="android_hardware_qcom_sm8150_thermal" path="hardware/qcom/sm8150/thermal" revision="ae2f68f423efaf5710229ee05ffcadaed306f8ee"   />
-  <project name="android_hardware_qcom_sm8150_vr" path="hardware/qcom/sm8150/vr" revision="83c0155ec713872c7096a7610683e0c99e1f9803"   />
-  <project name="android_hardware_qcom_sm8150p_gps" path="hardware/qcom/sm8150p/gps" revision="2dcbb1efacb66e4ac019458a44640505b7b9b9c4"   >
+  <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" />
+  <project name="android_hardware_qcom_sm8150_gps" path="hardware/qcom/sm8150/gps" />
+  <project name="android_hardware_qcom_sm8150_media" path="hardware/qcom/sm8150/media" />
+  <project name="android_hardware_qcom_sm8150_thermal" path="hardware/qcom/sm8150/thermal" />
+  <project name="android_hardware_qcom_sm8150_vr" path="hardware/qcom/sm8150/vr" />
+  <project name="android_hardware_qcom_sm8150p_gps" path="hardware/qcom/sm8150p/gps" >
     <linkfile dest="hardware/qcom/sm8150p/Android.mk" src="os_pickup.mk"/>
     <linkfile dest="hardware/qcom/sm8150p/Android.bp" src="os_pickup.bp"/>
   </project>
-  <project name="android_hardware_ril" path="hardware/ril" revision="2d9d13e7a03633a46a6d830c127813e8dfa60e29"   />
-  <project name="android_hardware_st_nfc" path="hardware/st/nfc" revision="9fa86debcd049af60fb82bd831cab2201364d575"   />
-  <project name="android_hardware_st_secure_element" path="hardware/st/secure_element" revision="10eae85dcf7c2add96fbce6b6691b14cbcc8365d"   />
-  <project name="android_hardware_ti_am57x" path="hardware/ti/am57x" revision="ecea4a76d9fd937f4e79f71332190da98229495c"   />
-  <project name="android_vendor_wifi_driver_amlogic_w1_wifi" path="vendor/wifi_driver/amlogic/w1/wifi" revision="b758853937fd9597f732311063b3a0fe607e591b"  />
-  <project name="android_vendor_wifi_driver_broadcom_ap6xxx" path="vendor/wifi_driver/broadcom/ap6xxx" revision="9b0d64884665a46f05c0038e335f9e02eec6db90"  />
-  <project name="android_vendor_wifi_driver_marvell_sd8987" path="vendor/wifi_driver/marvell/sd8987" revision="57ae446dc0ded27975329ff8022b34d0f17092f4"  />
-  <project name="android_vendor_wifi_driver_mtk_drivers_mt7661" path="vendor/wifi_driver/mtk/drivers/mt7661" revision="b082b3ae60766bf4bd2a179f08e6ac945f4c92f4"  />
-  <project name="android_vendor_wifi_driver_mtk_drivers_mt7663u" path="vendor/wifi_driver/mtk/drivers/mt7663u" revision="39ef77a543ccff05b71c8c023ffe2830d66421a5"/>
-  <project name="android_vendor_wifi_driver_mtk_drivers_mt7668u" path="vendor/wifi_driver/mtk/drivers/mt7668u" revision="b86cd05fb966f037926f720f25efeadd665cebba"  />
-  <project name="android_vendor_wifi_driver_qualcomm_qca6174" path="vendor/wifi_driver/qualcomm/qca6174" revision="8898b1abc0e9aa31a3ee81a4552e69efb5433490"  />
-  <project name="android_vendor_wifi_driver_realtek_8723bu" path="vendor/wifi_driver/realtek/8723bu" revision="76cb2d5d4028d57a4fa016bdacde8d5a13345dfe"  />
-  <project name="android_vendor_wifi_driver_realtek_8723du" path="vendor/wifi_driver/realtek/8723du" revision="385dd93962914664173a0fe26d8e55708ff56b7c"  />
-  <project name="android_vendor_wifi_driver_realtek_8821cs" path="vendor/wifi_driver/realtek/8821cs" revision="f8c0a2ff353e4054c33fc0338a98e25088a5ff7b"  />
-  <project name="android_vendor_wifi_driver_realtek_8821cu" path="vendor/wifi_driver/realtek/8821cu" revision="d817e7546b9dc75e686e753fb9d1bad10addb8d3"  />
-  <project name="android_vendor_wifi_driver_realtek_8822cs" path="vendor/wifi_driver/realtek/8822cs" revision="5d73eb2b847914aad139a281439ae02274671e14"  />
-  <project name="android_vendor_wifi_driver_realtek_8822cu" path="vendor/wifi_driver/realtek/8822cu" revision="e0914d4a02c9d67931f1bac29722079458745197"  />
-  <project name="android_vendor_wifi_driver_unisoc_uwe5621" path="vendor/wifi_driver/unisoc/uwe5621" revision="6d721a815a1dcd8bd4113b17f8f80be25090d975"  />
-  <project name="android_build" path="build" revision="f5880aa3b17273dc7e76707fc084b9f25fb721df"/>
-  <project name="android_libcore" path="libcore" revision="88197184a5d9ffd9556d355e81ae8584ba7f546f"   />
-  <project name="android_libnativehelper" path="libnativehelper" revision="4494e4aa4167ec5bdd687a3ed49b10c6f9d21c34"   />
-  <project name="android_vendor_amlogic_common_apps_AppInstaller" path="vendor/amlogic/common/apps/AppInstaller" revision="28385ac2f1c7c62c464b993966b30a08aa9d9acf"  />
-  <project name="android_vendor_amlogic_common_apps_DLNA" path="vendor/amlogic/common/apps/DLNA" revision="a2348a081eeb17dc55b730a35cba47850e3aa0a7"  />
-  <project name="android_vendor_amlogic_common_apps_Miracast" path="vendor/amlogic/common/apps/Miracast" revision="3e6a8460c2518b61789e828dcae21bbd0b6ff919"  />
-  <project name="android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="3bbb5c57fb05262992397a89bc96745c40f045f1"   />
-  <project name="android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" revision="449f56158b7ec07c95ef425efeba0a96845eee8d"   />
-  <project name="android_packages_apps_Browser2" path="packages/apps/Browser2" revision="37652f79d1a115bc2d920a68ad6846a23107c660"   />
-  <project name="android_packages_apps_Calendar" path="packages/apps/Calendar" revision="d1ed658e4bd2e6e4d32fb9ebea9bcf8bfb48d78b"   />
-  <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" revision="3c831c91848e221edd519c181c3d15b773d7dce5"   />
-  <project name="android_packages_apps_Car_Calendar" path="packages/apps/Car/Calendar" revision="72814a341a065371fd84eec5ae59ad944fed5bb9"   />
-  <project name="android_packages_apps_Car_Cluster" path="packages/apps/Car/Cluster" revision="1a6c718732d5160de127e6575653b6ddfa88ec5c"   />
-  <project name="android_packages_apps_Car_Dialer" path="packages/apps/Car/Dialer" revision="b422e813e611800b46a2b18920b9eab7ca6cbd2f"   />
-  <project name="android_packages_apps_Car_Hvac" path="packages/apps/Car/Hvac" revision="4f36489542207af18e7383bba4b204b663f79d8a"   />
-  <project name="android_packages_apps_Car_LatinIME" path="packages/apps/Car/LatinIME" revision="de1026103842def1d39294bdf65b320b37f0eb0a"   />
-  <project name="android_packages_apps_Car_Launcher" path="packages/apps/Car/Launcher" revision="995543d36f9b193604dde189614cca5b1abe3cfb"   />
-  <project name="android_packages_apps_Car_LinkViewer" path="packages/apps/Car/LinkViewer" revision="342eefd8dd55f09edbbd51a93bcb6fcc1dbb3769"   />
-  <project name="android_packages_apps_Car_LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="12346cd9493022f0a94039c2fcee5b29c34802fd"   />
-  <project name="android_packages_apps_Car_Media" path="packages/apps/Car/Media" revision="7b215a6049652c7980799fc76a6a8fad31b4fdca"   />
-  <project name="android_packages_apps_Car_Messenger" path="packages/apps/Car/Messenger" revision="2a84b1730404e6eaf376297b7e873ffb2758f4ee"   />
-  <project name="android_packages_apps_Car_Notification" path="packages/apps/Car/Notification" revision="af39c40cfb16f1be93b1a29401d5ecdb063285ab"   />
-  <project name="android_packages_apps_Car_Radio" path="packages/apps/Car/Radio" revision="2874b13f06744b4b38eb89e6a7e9c33365f8f4c4"   />
-  <project name="android_packages_apps_Car_RotaryController" path="packages/apps/Car/RotaryController" revision="a2a28a1b6c20416b26f5ef5caba5a1b47ad68767"   />
-  <project name="android_packages_apps_Car_Settings" path="packages/apps/Car/Settings" revision="872c80647d931f2c209f6f37507f4995105407d4"   />
-  <project name="android_packages_apps_Car_SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="021ae5793f07e40a3e9ac2017b3a7647498e8aef"   />
-  <project name="android_packages_apps_Car_libs" path="packages/apps/Car/libs" revision="ad621a2b1f964c02c25bbf4729766802f9e80ffb"   />
-  <project name="android_packages_apps_Car_tests" path="packages/apps/Car/tests" revision="2b9cc8b21fcd4fbb1b7e34068bd02c51b3ababde"   />
-  <project name="android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="535432ae202463eb35ded45a4711ea62064324c7"   />
-  <project name="android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="94c8aef59fc6806bd700d7ba6c2e3525dc499e76"   />
-  <project name="android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="76ef074839736879f844159b4f3fdcdd0b5e6297"   />
-  <project name="android_packages_apps_Contacts" path="packages/apps/Contacts" revision="9d5577c4069d0fb8e4c84564e629358d8bbec47d"   />
-  <project name="android_packages_apps_DeskClock" path="packages/apps/DeskClock" revision="756bf0ad0ec0611ca6963630e28de224452dbb9b"   />
-  <project name="android_packages_apps_DevCamera" path="packages/apps/DevCamera" revision="d148d3a70242fc8d2975e83946f7b8b2927ab3e7"   />
-  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" revision="eb5f9ca7b8d8ff768a322a851148bcc0d8617cec"   />
-  <project name="android_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" revision="50b9994d52e58514b8cb652dac2d76e0d6100e35"   />
-  <project name="android_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" revision="43047d4b8955f573c8461740d72522d80b445023"   />
-  <project name="android_packages_apps_Gallery" path="packages/apps/Gallery" revision="ab14daba010c9306faa76b83bd3b2170e6055259"   />
-  <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" revision="72e026ea2aafbbd0de2fc6e41b6cb37c6fb96ef3"   />
-  <project name="android_packages_apps_HTMLViewer" path="packages/apps/HTMLViewer" revision="2ceb86e2ed3397d17b208c224ff72297eb28cc1a"   />
-  <project name="android_packages_apps_KeyChain" path="packages/apps/KeyChain" revision="c1636c603611e08ba98c7f7418d39d4ef432061b"   />
-  <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" revision="90664c5bb5277853b568f15397fadc20596329eb"   />
-  <project name="android_packages_apps_LegacyCamera" path="packages/apps/LegacyCamera" revision="cebfa6261715dc8c934b473b7a2d1404545c3945"   />
-  <project name="android_packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="e4cec246e740cef3e3979cd5948f14d37ff2431b"   />
-  <project name="android_packages_apps_Messaging" path="packages/apps/Messaging" revision="cd5e0e37c14102d69baae4d98538d6c5f204f5a3"   />
-  <project name="android_packages_apps_Music" path="packages/apps/Music" revision="718379e3b244a0051b93ded2a70b2377634f1ea5"   />
-  <project name="android_packages_apps_MusicFX" path="packages/apps/MusicFX" revision="954665bfbf1a3190ce35ef10ed20b40da78b70d8"   />
-  <project name="android_packages_apps_Nfc" path="packages/apps/Nfc" revision="293a7fc35a8249dbe8cfa68fcf8c22d50b4e8345"   />
-  <project name="android_packages_apps_OnDeviceAppPrediction" path="packages/apps/OnDeviceAppPrediction" revision="13fe82e5331271b544a3c123cd49e2e01327fd2e"   />
-  <project name="android_packages_apps_OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="737b0d2daabf33a458ed754e045b2f0e2b65da70"   />
-  <project name="android_packages_apps_PermissionController" path="packages/apps/PermissionController" revision="5a695c884d66c94d33b278dc626b4ed0c9ecd2ec"   />
-  <project name="android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="bf8a8d577244229ad6249dba589ba3df6d2cc19b"   />
-  <project name="android_packages_apps_Protips" path="packages/apps/Protips" revision="277f2db1a9099d5aaf96d4f3ca8daaeeeeef4e6f"   />
-  <project name="android_packages_apps_Provision" path="packages/apps/Provision" revision="a169fa4647c818fbebe1a24ebbc18ec746133adb"   />
-  <project name="android_packages_apps_QuickAccessWallet" path="packages/apps/QuickAccessWallet" revision="3c466535fff311ea0ac3f11facb633afc030797a"   />
-  <project name="android_packages_apps_QuickSearchBox" path="packages/apps/QuickSearchBox" revision="e4cfbe279dd82ed587a20ab599f3ae6f55c4fc1f"   />
-  <project name="android_packages_apps_SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="fa26da7871be2bba609c05098c20c1737abb6996"   />
-  <project name="android_packages_apps_SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" revision="c7952bab7ab6127649d0f4e2d9d67f4af014fb82"   />
-  <project name="android_packages_apps_SecureElement" path="packages/apps/SecureElement" revision="57ba8db9d456de7ce36303676d5238021c96be50"   />
-  <project name="android_packages_apps_Settings" path="packages/apps/Settings" revision="e4b5fe692513e6100929f7f8810d73270318f5fd"   />
-  <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="fc2ed2484329160b12a47a1b26ea2f3041b166d4"   />
-  <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" revision="94dc405917913083876882c1af3c7e7638f92d18"   />
-  <project name="android_packages_apps_SpareParts" path="packages/apps/SpareParts" revision="f3d46ceeecd71c5555939f32643c18c78ae7909f"   />
-  <project name="android_packages_apps_Stk" path="packages/apps/Stk" revision="36b58d161f287e05439210c2063126bc757e6ac8"   />
-  <project name="android_packages_apps_StorageManager" path="packages/apps/StorageManager" revision="dbee356d95f62482102ccb50a42a9cbe7e51e621"   />
-  <project name="android_packages_apps_TV" path="packages/apps/TV" revision="6f600bc753cd6bfbe7c4ae85b46f9633259b035d"   />
-  <project name="android_packages_apps_Tag" path="packages/apps/Tag" revision="fb736020ebd4c5f751b984b4b34a4fc8ed04aa01"   />
-  <project name="android_packages_apps_Terminal" path="packages/apps/Terminal" revision="4d4e9490fdd512668ac0d47764f3eeb19504a6d2"   />
-  <project name="android_packages_apps_Test_connectivity" path="packages/apps/Test/connectivity" revision="22d6ee33637f78f91e78195ebe84fb0ca0639bf0"   />
-  <project name="android_packages_apps_ThemePicker" path="packages/apps/ThemePicker" revision="3248ea3dd460229914f00ecef63bb11839f00cf3"   />
-  <project name="android_packages_apps_TimeZoneData" path="packages/apps/TimeZoneData" revision="ba88d76aa8c1123935bf82afbdaa03e2fdf5d462"   />
-  <project name="android_packages_apps_TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="19cc1bc635eb653452e2738cf27989ae36dacea4"   />
-  <project name="android_packages_apps_Traceur" path="packages/apps/Traceur" revision="dcb3b841c2e5bb5e67879b3795dac5f08e75b14f"   />
-  <project name="android_packages_apps_TvSettings" path="packages/apps/TvSettings" revision="3bf652274c2a357666c000f86665666c3f778351"   />
-  <project name="android_packages_apps_UniversalMediaPlayer" path="packages/apps/UniversalMediaPlayer" revision="d2894e3b45dcbd4bfed9cd482d51833b72853411"  />
-  <project name="android_packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" revision="f1e69b45bde30a055d37260012df8e951bebf491"   />
-  <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" revision="bdd56181e2afb6c4b59c4c6cf6defea6c3695986"   />
-  <project name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="6cb71df6570554130de396a70bcbb8d7fec99af0"   />
-  <project name="android_packages_inputmethods_LeanbackIME" path="packages/inputmethods/LeanbackIME" revision="1667592ee5924122e43b611fa813c8f894087cd6"   />
-  <project name="android_packages_modules_ArtPrebuilt" path="packages/modules/ArtPrebuilt" revision="d078c40eedd7ae262541642ee18b225d3b56a5f9"    />
-  <project name="android_packages_modules_CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" revision="eea110a30ad9904956e64ff6b677df92abdce9c1"   />
-  <project name="android_packages_modules_CellBroadcastService" path="packages/modules/CellBroadcastService" revision="2d067a75fa43927532de963d8468194796875399"   />
-  <project name="android_packages_modules_Cronet" path="packages/modules/Cronet" revision="618b9f9d549467dc0383962d9449c32e61e53be1"   />
-  <project name="android_packages_modules_DnsResolver" path="packages/modules/DnsResolver" revision="51940cd182f5098c6fe53c96d3868e81a57ab158"   />
-  <project name="android_packages_modules_ExtServices" path="packages/modules/ExtServices" revision="5a6ac68b69602e1044a447aa3eb8aa17289e83e7"   />
-  <project name="android_packages_modules_IPsec" path="packages/modules/IPsec" revision="3d5334773fb782232b63dd860615ddbccc37f815"   />
-  <project name="android_packages_modules_ModuleMetadata" path="packages/modules/ModuleMetadata" revision="bf198f3182e53f3d1dc9d061f558656e59f5d4c8"   />
-  <project name="android_packages_modules_NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" revision="78b33ffc1f33060463b83bbbd8b9dbb161f82535"   />
-  <project name="android_packages_modules_NetworkStack" path="packages/modules/NetworkStack" revision="6da96c35940b381dbf3b53ebcc68f92cd9bab4f2"   />
-  <project name="android_packages_modules_SdkExtensions" path="packages/modules/SdkExtensions" revision="c571e6f6702a630532f270cce5fe832a8ee71cdc"   />
-  <project name="android_packages_modules_TestModule" path="packages/modules/TestModule" revision="3523a2f0f9b12d4e60374af63aae14f75a2b4c10"  />
-  <project name="android_packages_modules_vndk" path="packages/modules/vndk" revision="9d2db0e4f7bd51b1627c4dc07dd9b93925e4f962"   />
-  <project name="android_packages_providers_BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="049f9d571c032c50138da695b810fc90e0b46af4"   />
-  <project name="android_packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider" revision="0506b68a4f23e7639c470b075fdf547347bad810"   />
-  <project name="android_packages_providers_CalendarProvider" path="packages/providers/CalendarProvider" revision="7dd51204720538a998a368a9599eaa6cda25434f"   />
-  <project name="android_packages_providers_CallLogProvider" path="packages/providers/CallLogProvider" revision="3ed4fe1c4721b39d74af59e0c3e5c54f088b87aa"   />
-  <project name="android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" revision="8397349cc5e0f837d5f3ca2834475a56632361ed"   />
-  <project name="android_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" revision="993a7a84787c18c31596bfd8fe271dba11a93416"   />
-  <project name="android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" revision="47c141d93e93b25cc85c36f3579fda25a1695952"   />
-  <project name="android_packages_providers_PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="9c3b541b4357011de2047a2e24f92a63c6d8d8a0"   />
-  <project name="android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" revision="aa2f71d91dced6b692bafc2deb1fd22b0314be6c"   />
-  <project name="android_packages_providers_TvProvider" path="packages/providers/TvProvider" revision="c623ff9289cb5bebe69886a4884fb004b3996d7f"   />
-  <project name="android_packages_providers_UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="58d28d9642a57e8be8367b7557c7495866c6fa5d"   />
-  <project name="android_packages_screensavers_Basic" path="packages/screensavers/Basic" revision="e4871d3951c6469a2cb9fef9630532cfd82a4f29"   />
-  <project name="android_packages_screensavers_PhotoTable" path="packages/screensavers/PhotoTable" revision="358ac1214aca08fef2f23295d872299a54628c42"   />
-  <project name="android_packages_services_AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" revision="b4955a68ca98fce9e3f73dbccbc5e82482a6d0a6"   />
-  <project name="android_packages_services_BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="f954cf0124ab2ba4b1fff3e07ad48263ec7549fd"   />
-  <project name="android_packages_services_Car" path="packages/services/Car" revision="3bb8f40b0caf65a6b03cf50f40dd979b2d53388e"   />
-  <project name="android_packages_services_Mms" path="packages/services/Mms" revision="87d91e27c9cdc12422a4eb7eb5bc789446adbe0c"   />
-  <project name="android_packages_services_Mtp" path="packages/services/Mtp" revision="8788b998339af115404ec7230d28c06d5dea4424"   />
-  <project name="android_packages_services_Telecomm" path="packages/services/Telecomm" revision="d2c9ca56c929565e061f51b4ad715f12d50976c1"   />
-  <project name="android_packages_services_Telephony" path="packages/services/Telephony" revision="3a39ac5b54de6167d626a11a58bf33a3f716e0d2"   />
-  <project name="android_packages_wallpapers_ImageWallpaper" path="packages/wallpapers/ImageWallpaper" revision="0a1680f07b09889c7642a775b6bb69d1b27f9b09"   />
-  <project name="android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" revision="a78b0affc20f2d0606fddb1ad31e3e4978e657e1"   />
-  <project name="android_pdk" path="pdk" revision="4a62634eaf9e69cbaca900d259330ab5d632f373"   />
-  <project name="android_platform_testing" path="platform_testing" revision="1329f18696fed0cd2fcde78a226cf700be190e8b"   />
-  <project name="android_prebuilts_abi-dumps_ndk" path="prebuilts/abi-dumps/ndk" revision="cfba83229ba83f9bc058af952916e1b2db273714"    />
-  <project name="android_prebuilts_abi-dumps_platform" path="prebuilts/abi-dumps/platform" revision="dc6751d5dd6ebc7c5e045875543c2ecd0647e9a8"    />
-  <project name="android_prebuilts_abi-dumps_vndk" path="prebuilts/abi-dumps/vndk" revision="788298219c7571957408bef2c9a409bd60ec193a"    />
-  <project name="android_prebuilts_asuite" path="prebuilts/asuite" revision="16f29d44bc277264e14ed0831fd4351bfaf24550"    />
-  <project name="android_prebuilts_build-tools" path="prebuilts/build-tools" revision="0906008e00e8b77d6b3aa4cb197e76e6817d8841"    />
-  <project name="android_prebuilts_bundletool" path="prebuilts/bundletool" revision="42973709abd84594a62443b8dd2f905e25b3212c"    />
-  <project name="android_prebuilts_checkcolor" path="prebuilts/checkcolor" revision="b2b4c468ad93319a1997474fb1bb88938d04009d"    />
-  <project name="android_prebuilts_checkstyle" path="prebuilts/checkstyle" revision="c05b54f806a0283a022284fdf571bba8884b742f"    />
-  <project name="android_prebuilts_clang-tools" path="prebuilts/clang-tools" revision="fe0a2e9f1ba408a9641619a0092f6905e04a9da7"    />
-  <project name="platform/prebuilts/clang/host/darwin-x86" remote="aosp" path="prebuilts/clang/host/darwin-x86" revision="54b409c19f6bc9f37748ade1ffe7bba81ae45e5a"    />
-  <project name="platform/prebuilts/clang/host/linux-x86" remote="aosp" path="prebuilts/clang/host/linux-x86" revision="e104573d8a0245cfa42ba23d6e2e5a79a272cb5f"    />
-  <project name="android_prebuilts_cmdline-tools" path="prebuilts/cmdline-tools" revision="4a7329885c37b97a11699d689b4cfc7198d92775"    />
-  <project name="android_prebuilts_devtools" path="prebuilts/devtools" revision="7880027af1a44ffe1c2b4ef8c874ff9c3a414b69"    />
-  <project name="platform/prebuilts/fuchsia_sdk" remote="aosp" path="prebuilts/fuchsia_sdk" revision="12c41f24a38aefda3c5dda0dd513945b616cd765"    />
-  <project name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="47ca55027a8c659c8e3081a3b0820ed42891047e"    />
-  <project name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="e4ea9c277da918bdb30cb314a25a485b9178b6a2"    />
-  <project name="android_prebuilts_gcc_darwin-x86_host_i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="353332b8c310174c2dff55db520349cff40b1295"    />
-  <project name="android_prebuilts_gcc_darwin-x86_mips_mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" revision="6c884e5b2076a38ba5b73eec20579670d41d5441"    />
-  <project name="android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="6a9ba9b31f0470501fc288cb79a6f8a373679476"    />
-  <project name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="043dc0ad16a73e0e1973132d00fa6265ab4fa6ba"    />
-  <project name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="5ac02a0ba9f39591758bab4516dd0725747af0c3"    />
-  <project name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="3a954758bbbf155a136ccb528c3fd2431c0d14d2"    />
-  <project name="android_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="43a9fd9dd0601fca3e53e252aa3848cfabec04ac"    />
-  <project name="android_prebuilts_gcc_linux-x86_mips_mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="ab4435f1b60f319de42be7b6f2a7bf10edde7e3d"    />
-  <project name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="e806ff30fd3e480eb4643373825cad55ef3a2170"    />
-  <project name="android_prebuilts_gdb_darwin-x86" path="prebuilts/gdb/darwin-x86" revision="481790b5f34a2e67e677d04c7fdf1684e64cc413"    />
-  <project name="android_prebuilts_gdb_linux-x86" path="prebuilts/gdb/linux-x86" revision="96d94994f490d4eee9ca54f65733fa43741b232f"    />
-  <project name="android_prebuilts_go_darwin-x86" path="prebuilts/go/darwin-x86" revision="6f220189501db4eb5096cbdd3bd0e9615d97154b"    />
-  <project name="android_prebuilts_go_linux-x86" path="prebuilts/go/linux-x86" revision="a11b3f9506390724cec9673ff9c21fba12136046"    />
-  <project name="android_prebuilts_gradle-plugin" path="prebuilts/gradle-plugin" revision="83deb3e12b75aeba7585bfbd913f38c289adf9d4"    />
-  <project name="platform/prebuilts/jdk/jdk11" remote="aosp" path="prebuilts/jdk/jdk11" revision="2af57446f191a0481fe08779815e507c70db7f4c"    />
-  <project name="platform/prebuilts/jdk/jdk8" remote="aosp" path="prebuilts/jdk/jdk8" revision="74e4f1844dfa9b8df9e0fe2ff34a2ecc24d52b07"    />
-  <project name="platform/prebuilts/jdk/jdk9" remote="aosp" path="prebuilts/jdk/jdk9" revision="8f41c13df7d173730f3b031ca39ca1c2450745cb"    />
-  <project name="android_prebuilts_ktlint" path="prebuilts/ktlint" revision="78713762f01e42e647fc6ec2adde628d41bdc265"    />
-  <project name="android_prebuilts_manifest-merger" path="prebuilts/manifest-merger" revision="3b9fc994c7ec52c403a8d30ceb08ca29b3579c52"    />
-  <project name="android_prebuilts_maven_repo_android" path="prebuilts/maven_repo/android" revision="1057296cf7d4af15eb504ffdf6a1791aca1dce7b"    />
-  <project name="android_prebuilts_maven_repo_bumptech" path="prebuilts/maven_repo/bumptech" revision="cc50918f07cd929227e0e93c85b897c84aa499c8"    />
-  <project name="platform/prebuilts/misc" remote="aosp" path="prebuilts/misc" revision="9ae268fc4354288daed74956df3a1dba1548abbd"    />
-  <project name="android_prebuilts_module_sdk_art" path="prebuilts/module_sdk/art" revision="0a68152386e56eab7fce3813aca01301e197b17b"    />
-  <project name="android_prebuilts_ndk" path="prebuilts/ndk" revision="4a0fef6af484b233e411d60a4d226ad3c830941f"    />
-  <project name="android_prebuilts_python_darwin-x86_2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="0c5958b1636c47ed7c284f859c8e805fd06a0e63"    />
-  <project name="android_prebuilts_python_linux-x86_2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="53add29eb7b4eaa9e128e3ec84eac9e65cf4c986"    />
-  <project name="platform/prebuilts/qemu-kernel" remote="aosp" path="prebuilts/qemu-kernel" revision="084fa0f4df2012019501ecad76674160b808eca0"    />
-  <project name="android_prebuilts_r8" path="prebuilts/r8" revision="e222f0b765847c8cc097bd7f0d0147c0759eee1f"    />
-  <project name="platform/prebuilts/remoteexecution-client" remote="aosp" path="prebuilts/remoteexecution-client" revision="0e6c4d7de80f755daa8e439d24e182c9963c4fd6"    />
-  <project name="android_prebuilts_runtime" path="prebuilts/runtime" revision="2efbd99a0140b8a224d5ec39b82550a6da88cedc"    />
-  <project name="platform/prebuilts/rust" remote="aosp" path="prebuilts/rust" revision="a48fb0348501e6d2ef7380b7c5e66ebe297e0dfd"    />
-  <project name="platform/prebuilts/sdk" remote="aosp" path="prebuilts/sdk" revision="dd24e56981eaa0d99c8abe2260ccc5977c26291d"    >
+  <project name="android_hardware_ril" path="hardware/ril" />
+  <project name="android_hardware_st_nfc" path="hardware/st/nfc" />
+  <project name="android_hardware_st_secure_element" path="hardware/st/secure_element" />
+  <project name="android_hardware_ti_am57x" path="hardware/ti/am57x" />
+  <project name="android_vendor_wifi_driver_amlogic_w1_wifi" path="vendor/wifi_driver/amlogic/w1/wifi" />
+  <project name="android_vendor_wifi_driver_broadcom_ap6xxx" path="vendor/wifi_driver/broadcom/ap6xxx" />
+  <project name="android_vendor_wifi_driver_marvell_sd8987" path="vendor/wifi_driver/marvell/sd8987" />
+  <project name="android_vendor_wifi_driver_mtk_drivers_mt7661" path="vendor/wifi_driver/mtk/drivers/mt7661" />
+  <project name="android_vendor_wifi_driver_mtk_drivers_mt7663u" path="vendor/wifi_driver/mtk/drivers/mt7663u" />
+  <project name="android_vendor_wifi_driver_mtk_drivers_mt7668u" path="vendor/wifi_driver/mtk/drivers/mt7668u" />
+  <project name="android_vendor_wifi_driver_qualcomm_qca6174" path="vendor/wifi_driver/qualcomm/qca6174" />
+  <project name="android_vendor_wifi_driver_realtek_8723bu" path="vendor/wifi_driver/realtek/8723bu" />
+  <project name="android_vendor_wifi_driver_realtek_8723du" path="vendor/wifi_driver/realtek/8723du" />
+  <project name="android_vendor_wifi_driver_realtek_8821cs" path="vendor/wifi_driver/realtek/8821cs" />
+  <project name="android_vendor_wifi_driver_realtek_8821cu" path="vendor/wifi_driver/realtek/8821cu" />
+  <project name="android_vendor_wifi_driver_realtek_8822cs" path="vendor/wifi_driver/realtek/8822cs" />
+  <project name="android_vendor_wifi_driver_realtek_8822cu" path="vendor/wifi_driver/realtek/8822cu" />
+  <project name="android_vendor_wifi_driver_unisoc_uwe5621" path="vendor/wifi_driver/unisoc/uwe5621" />
+  <project name="android_build" path="build" />
+  <project name="android_libcore" path="libcore" />
+  <project name="android_libnativehelper" path="libnativehelper" />
+  <project name="android_vendor_amlogic_common_apps_AppInstaller" path="vendor/amlogic/common/apps/AppInstaller" />
+  <project name="android_vendor_amlogic_common_apps_DLNA" path="vendor/amlogic/common/apps/DLNA" />
+  <project name="android_vendor_amlogic_common_apps_Miracast" path="vendor/amlogic/common/apps/Miracast" />
+  <project name="android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" />
+  <project name="android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" />
+  <project name="android_packages_apps_Browser2" path="packages/apps/Browser2" />
+  <project name="android_packages_apps_Calendar" path="packages/apps/Calendar" />
+  <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" />
+  <project name="android_packages_apps_Car_Calendar" path="packages/apps/Car/Calendar" />
+  <project name="android_packages_apps_Car_Cluster" path="packages/apps/Car/Cluster" />
+  <project name="android_packages_apps_Car_Dialer" path="packages/apps/Car/Dialer" />
+  <project name="android_packages_apps_Car_Hvac" path="packages/apps/Car/Hvac" />
+  <project name="android_packages_apps_Car_LatinIME" path="packages/apps/Car/LatinIME" />
+  <project name="android_packages_apps_Car_Launcher" path="packages/apps/Car/Launcher" />
+  <project name="android_packages_apps_Car_LinkViewer" path="packages/apps/Car/LinkViewer" />
+  <project name="android_packages_apps_Car_LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" />
+  <project name="android_packages_apps_Car_Media" path="packages/apps/Car/Media" />
+  <project name="android_packages_apps_Car_Messenger" path="packages/apps/Car/Messenger" />
+  <project name="android_packages_apps_Car_Notification" path="packages/apps/Car/Notification" />
+  <project name="android_packages_apps_Car_Radio" path="packages/apps/Car/Radio" />
+  <project name="android_packages_apps_Car_RotaryController" path="packages/apps/Car/RotaryController" />
+  <project name="android_packages_apps_Car_Settings" path="packages/apps/Car/Settings" />
+  <project name="android_packages_apps_Car_SystemUpdater" path="packages/apps/Car/SystemUpdater" />
+  <project name="android_packages_apps_Car_libs" path="packages/apps/Car/libs" />
+  <project name="android_packages_apps_Car_tests" path="packages/apps/Car/tests" />
+  <project name="android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" />
+  <project name="android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" />
+  <project name="android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" />
+  <project name="android_packages_apps_Contacts" path="packages/apps/Contacts" />
+  <project name="android_packages_apps_DeskClock" path="packages/apps/DeskClock" />
+  <project name="android_packages_apps_DevCamera" path="packages/apps/DevCamera" />
+  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" />
+  <project name="android_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" />
+  <project name="android_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" />
+  <project name="android_packages_apps_Gallery" path="packages/apps/Gallery" />
+  <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" />
+  <project name="android_packages_apps_HTMLViewer" path="packages/apps/HTMLViewer" />
+  <project name="android_packages_apps_KeyChain" path="packages/apps/KeyChain" />
+  <project name="android_packages_apps_Launcher3" path="packages/apps/Launcher3" />
+  <project name="android_packages_apps_LegacyCamera" path="packages/apps/LegacyCamera" />
+  <project name="android_packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning" />
+  <project name="android_packages_apps_Messaging" path="packages/apps/Messaging" />
+  <project name="android_packages_apps_Music" path="packages/apps/Music" />
+  <project name="android_packages_apps_MusicFX" path="packages/apps/MusicFX" />
+  <project name="android_packages_apps_Nfc" path="packages/apps/Nfc" />
+  <project name="android_packages_apps_OnDeviceAppPrediction" path="packages/apps/OnDeviceAppPrediction" />
+  <project name="android_packages_apps_OneTimeInitializer" path="packages/apps/OneTimeInitializer" />
+  <project name="android_packages_apps_PermissionController" path="packages/apps/PermissionController" />
+  <project name="android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" />
+  <project name="android_packages_apps_Protips" path="packages/apps/Protips" />
+  <project name="android_packages_apps_Provision" path="packages/apps/Provision" />
+  <project name="android_packages_apps_QuickAccessWallet" path="packages/apps/QuickAccessWallet" />
+  <project name="android_packages_apps_QuickSearchBox" path="packages/apps/QuickSearchBox" />
+  <project name="android_packages_apps_SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" />
+  <project name="android_packages_apps_SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" />
+  <project name="android_packages_apps_SecureElement" path="packages/apps/SecureElement" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" />
+  <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" />
+  <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" />
+  <project name="android_packages_apps_SpareParts" path="packages/apps/SpareParts" />
+  <project name="android_packages_apps_Stk" path="packages/apps/Stk" />
+  <project name="android_packages_apps_StorageManager" path="packages/apps/StorageManager" />
+  <project name="android_packages_apps_TV" path="packages/apps/TV" />
+  <project name="android_packages_apps_Tag" path="packages/apps/Tag" />
+  <project name="android_packages_apps_Terminal" path="packages/apps/Terminal" />
+  <project name="android_packages_apps_Test_connectivity" path="packages/apps/Test/connectivity" />
+  <project name="android_packages_apps_ThemePicker" path="packages/apps/ThemePicker" />
+  <project name="android_packages_apps_TimeZoneData" path="packages/apps/TimeZoneData" />
+  <project name="android_packages_apps_TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" />
+  <project name="android_packages_apps_Traceur" path="packages/apps/Traceur" />
+  <project name="android_packages_apps_TvSettings" path="packages/apps/TvSettings" />
+  <project name="android_packages_apps_UniversalMediaPlayer" path="packages/apps/UniversalMediaPlayer" />
+  <project name="android_packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" />
+  <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" />
+  <project name="android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" />
+  <project name="android_packages_inputmethods_LeanbackIME" path="packages/inputmethods/LeanbackIME" />
+  <project name="android_packages_modules_ArtPrebuilt" path="packages/modules/ArtPrebuilt" />
+  <project name="android_packages_modules_CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" />
+  <project name="android_packages_modules_CellBroadcastService" path="packages/modules/CellBroadcastService" />
+  <project name="android_packages_modules_Cronet" path="packages/modules/Cronet" />
+  <project name="android_packages_modules_DnsResolver" path="packages/modules/DnsResolver" />
+  <project name="android_packages_modules_ExtServices" path="packages/modules/ExtServices" />
+  <project name="android_packages_modules_IPsec" path="packages/modules/IPsec" />
+  <project name="android_packages_modules_ModuleMetadata" path="packages/modules/ModuleMetadata" />
+  <project name="android_packages_modules_NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" />
+  <project name="android_packages_modules_NetworkStack" path="packages/modules/NetworkStack" />
+  <project name="android_packages_modules_SdkExtensions" path="packages/modules/SdkExtensions" />
+  <project name="android_packages_modules_TestModule" path="packages/modules/TestModule" />
+  <project name="android_packages_modules_vndk" path="packages/modules/vndk" />
+  <project name="android_packages_providers_BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" />
+  <project name="android_packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider" />
+  <project name="android_packages_providers_CalendarProvider" path="packages/providers/CalendarProvider" />
+  <project name="android_packages_providers_CallLogProvider" path="packages/providers/CallLogProvider" />
+  <project name="android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" />
+  <project name="android_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" />
+  <project name="android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" />
+  <project name="android_packages_providers_PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" />
+  <project name="android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" />
+  <project name="android_packages_providers_TvProvider" path="packages/providers/TvProvider" />
+  <project name="android_packages_providers_UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" />
+  <project name="android_packages_screensavers_Basic" path="packages/screensavers/Basic" />
+  <project name="android_packages_screensavers_PhotoTable" path="packages/screensavers/PhotoTable" />
+  <project name="android_packages_services_AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" />
+  <project name="android_packages_services_BuiltInPrintService" path="packages/services/BuiltInPrintService" />
+  <project name="android_packages_services_Car" path="packages/services/Car" />
+  <project name="android_packages_services_Mms" path="packages/services/Mms" />
+  <project name="android_packages_services_Mtp" path="packages/services/Mtp" />
+  <project name="android_packages_services_Telecomm" path="packages/services/Telecomm" />
+  <project name="android_packages_services_Telephony" path="packages/services/Telephony" />
+  <project name="android_packages_wallpapers_ImageWallpaper" path="packages/wallpapers/ImageWallpaper" />
+  <project name="android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" />
+  <project name="android_pdk" path="pdk" />
+  <project name="android_platform_testing" path="platform_testing" />
+  <project name="android_prebuilts_abi-dumps_ndk" path="prebuilts/abi-dumps/ndk" />
+  <project name="android_prebuilts_abi-dumps_platform" path="prebuilts/abi-dumps/platform" />
+  <project name="android_prebuilts_abi-dumps_vndk" path="prebuilts/abi-dumps/vndk" />
+  <project name="android_prebuilts_asuite" path="prebuilts/asuite" />
+  <project name="android_prebuilts_build-tools" path="prebuilts/build-tools" />
+  <project name="android_prebuilts_bundletool" path="prebuilts/bundletool" />
+  <project name="android_prebuilts_checkcolor" path="prebuilts/checkcolor" />
+  <project name="android_prebuilts_checkstyle" path="prebuilts/checkstyle" />
+  <project name="android_prebuilts_clang-tools" path="prebuilts/clang-tools" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" remote="aosp" />
+  <project name="android_prebuilts_cmdline-tools" path="prebuilts/cmdline-tools" />
+  <project name="android_prebuilts_devtools" path="prebuilts/devtools" />
+  <project name="platform/prebuilts/fuchsia_sdk" remote="aosp" path="prebuilts/fuchsia_sdk" />
+  <project name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <project name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <project name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" />
+  <project name="android_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+  <project name="android_prebuilts_gcc_linux-x86_mips_mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
+  <project name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+  <project name="android_prebuilts_gdb_darwin-x86" path="prebuilts/gdb/darwin-x86" />
+  <project name="android_prebuilts_gdb_linux-x86" path="prebuilts/gdb/linux-x86" />
+  <project name="android_prebuilts_go_darwin-x86" path="prebuilts/go/darwin-x86" />
+  <project name="android_prebuilts_go_linux-x86" path="prebuilts/go/linux-x86" />
+  <project name="android_prebuilts_gradle-plugin" path="prebuilts/gradle-plugin" />
+  <project name="platform/prebuilts/jdk/jdk11" remote="aosp" path="prebuilts/jdk/jdk11" />
+  <project name="platform/prebuilts/jdk/jdk8" remote="aosp" path="prebuilts/jdk/jdk8" />
+  <project name="platform/prebuilts/jdk/jdk9" remote="aosp" path="prebuilts/jdk/jdk9" />
+  <project name="android_prebuilts_ktlint" path="prebuilts/ktlint" />
+  <project name="android_prebuilts_manifest-merger" path="prebuilts/manifest-merger" />
+  <project name="android_prebuilts_maven_repo_android" path="prebuilts/maven_repo/android" />
+  <project name="android_prebuilts_maven_repo_bumptech" path="prebuilts/maven_repo/bumptech" />
+  <project name="platform/prebuilts/misc" remote="aosp" path="prebuilts/misc" />
+  <project name="android_prebuilts_module_sdk_art" path="prebuilts/module_sdk/art" />
+  <project name="android_prebuilts_ndk" path="prebuilts/ndk" />
+  <project name="android_prebuilts_python_darwin-x86_2.7.5" path="prebuilts/python/darwin-x86/2.7.5" />
+  <project name="android_prebuilts_python_linux-x86_2.7.5" path="prebuilts/python/linux-x86/2.7.5" />
+  <project name="platform/prebuilts/qemu-kernel" remote="aosp" path="prebuilts/qemu-kernel" />
+  <project name="android_prebuilts_r8" path="prebuilts/r8" />
+  <project name="platform/prebuilts/remoteexecution-client" remote="aosp" path="prebuilts/remoteexecution-client" />
+  <project name="android_prebuilts_runtime" path="prebuilts/runtime" />
+  <project path="prebuilts/rust" name="platform/prebuilts/rust" clone-depth="1" remote="aosp" />
+  <project name="platform/prebuilts/sdk" remote="aosp" path="prebuilts/sdk" clone-depth="1" >
     <linkfile dest="frameworks/support.md" src="current/androidx-README.md"/>
   </project>
-  <project name="platform/prebuilts/tools" remote="aosp" path="prebuilts/tools" revision="a8c356a4a3eb11f9f85ee20ecf30c94cfc9534ab"    />
-  <project name="android_prebuilts_vndk_v27" path="prebuilts/vndk/v27" revision="1ab20db3e87e22209bf9e00971346a199c2d07c8"    />
-  <project name="android_prebuilts_vndk_v28" path="prebuilts/vndk/v28" revision="9acec88c89b23881a2b3e5b9473176a12474f160"    />
-  <project name="android_prebuilts_vndk_v29" path="prebuilts/vndk/v29" revision="93623f6d162e93762d0391dcb91db2036d4b6db3"    />
-  <project name="android_sdk" path="sdk" revision="31b3d471a4d3dd7262f50cdfac83dbce7e7c5479"   />
-  <project name="platform/system/apex" remote="aosp" path="system/apex" revision="d0ab66408ee17cfea89a65ea858062eb7aa36980"   />
-  <project name="android_system_bpf" path="system/bpf" revision="81b26a8a969c9d25676f90597079b7ab8f8576b4"   />
-  <project name="android_system_bpfprogs" path="system/bpfprogs" revision="df5007df690cd26579d0c47e544b6dc91a38dfcd"   />
-  <project name="android_system_bt" path="system/bt" revision="473e6bf3d45aee4c500a9e19cf5d4dfce8ef6dd1"   />
-  <project name="android_system_ca-certificates" path="system/ca-certificates" revision="71863ee86e948f9c44ea00d540507147af07b15e"   />
-  <project name="android_system_chre" path="system/chre" revision="7a8022a85d4dd8563bd299e7a285bc3fe01df01b"   />
-  <project name="android_system_connectivity_wificond" path="system/connectivity/wificond" revision="31b3409fc8e505fb560eb75c18999807e3c4a136"   />
-  <project name="android_system_connectivity_wifilogd" path="system/connectivity/wifilogd" revision="d96bd96c699461682699628ba6bf604bf36f011a"   />
-  <project name="android_system_core" path="system/core" revision="7259c1f2c949249e5a53e4589c478629e99eb5cd"   />
-  <project name="android_system_extras" path="system/extras" revision="713ec011ac83acca3a1155d12a72aaa17510a99d"   />
-  <project name="android_system_gatekeeper" path="system/gatekeeper" revision="dd73a85fb461d6b6732fed1096ebd7b3e4619691"   />
-  <project name="android_system_gsid" path="system/gsid" revision="353bd5faa73121b77d7ca80ec3d71e0119898222"   />
-  <project name="android_system_hardware_interfaces" path="system/hardware/interfaces" revision="a2fe15bf96c8bb88c174ac61eab6c013a04332c4"   />
-  <project name="android_system_hwservicemanager" path="system/hwservicemanager" revision="9ed41f25fd3be8b51fd31b5d0c1223c754d437c4"   />
-  <project name="android_system_incremental_delivery" path="system/incremental_delivery" revision="f71981ace4eab2f970e22d9511f7c69cbd41406f"   />
-  <project name="android_system_iorap" path="system/iorap" revision="7a3a169fd927fa643da72ce7b96befba876126b5"   />
-  <project name="android_system_keymaster" path="system/keymaster" revision="fdf9dee4550de254a2a48725134e52fa28a042e6"   />
-  <project name="android_system_libartpalette" path="system/libartpalette" revision="3468f55d442bf980af9c3e675e0edf2efe2cff11"   />
-  <project name="android_system_libfmq" path="system/libfmq" revision="99966e53402fd125bb2361e3169d4c038c50b83e"   />
-  <project name="android_system_libhidl" path="system/libhidl" revision="1c7444ced3dcec38b8d59a1553c679b7dcf71aa4"   />
-  <project name="android_system_libhwbinder" path="system/libhwbinder" revision="d7614beb884779655e043db0daa58981b483d084"   />
-  <project name="android_system_libsysprop" path="system/libsysprop" revision="27c3ec696619e55dbe767728385729cdb57b518d"   />
-  <project name="android_system_libufdt" path="system/libufdt" revision="ffddffe108840bc65e9dae60ed361f48f5198e7d"   />
-  <project name="android_system_libvintf" path="system/libvintf" revision="9ee3065be209f05bb057d00b1014ef7918c6d652"   />
-  <project name="android_system_linkerconfig" path="system/linkerconfig" revision="532e2168503d5bb2c07f0bbe2eac150914144bb2"   />
-  <project name="android_system_media" path="system/media" revision="57c05c98b0f5b4026851305117ab2b923df6e2ce"   />
-  <project name="android_system_memory_libion" path="system/memory/libion" revision="08029308f4e9b267caedb6e294971cac170b91fb"   />
-  <project name="android_system_memory_libmeminfo" path="system/memory/libmeminfo" revision="69298f797fdf0b580021befec2c4c6553fa4b5f0"   />
-  <project name="android_system_memory_libmemtrack" path="system/memory/libmemtrack" revision="e3d7988449a9579bfced8a4fa8355de36ee95d64"   />
-  <project name="android_system_memory_libmemunreachable" path="system/memory/libmemunreachable" revision="0c0852b75771a8b36bbcb8c816d8658aa92b9b45"   />
-  <project name="android_system_memory_lmkd" path="system/memory/lmkd" revision="c18a820306e04d80086a37b2785fd046899ee1cf"   />
-  <project name="android_system_netd" path="system/netd" revision="8b883c8bc84d3aa82b697bd07421ae6ebfeb5fc6"   />
-  <project name="android_system_nfc" path="system/nfc" revision="b1d73e7127e003ae8b70597b44003e3cef0f5d79"   />
-  <project name="android_system_nvram" path="system/nvram" revision="559fb5ba33c4288d79545c7abdd6d7368c0a1ce0"   />
-  <project name="android_system_security" path="system/security" revision="8d67a91578041e8e8389800e6f367e213d623c72"   />
-  <project name="android_system_sepolicy" path="system/sepolicy" revision="d0674b18c22392476d183f6e2da047916afebb84"   />
-  <project name="android_system_server_configurable_flags" path="system/server_configurable_flags" revision="594a01f179ebfbc1de99d22d9faf62014f0244a0"   />
-  <project name="android_system_teeui" path="system/teeui" revision="add4ebe79988fe4cff1b368fe2f1f67c1f1de98e"   />
-  <project name="android_system_testing_gtest_extras" path="system/testing/gtest_extras" revision="8e8f1e9c82c946997959642073317784627919a5"   />
-  <project name="android_system_timezone" path="system/timezone" revision="7b33da156d45ab8a8c9934bae30317cf0d0ea9e9"   />
-  <project name="android_system_tools_aidl" path="system/tools/aidl" revision="24068fab9a520b81a12e2e029286ceb72c45ca5b"   />
-  <project name="android_system_tools_hidl" path="system/tools/hidl" revision="6cc7574abfa3950aa3322949732636971554cfd2"   />
-  <project name="android_system_tools_mkbootimg" path="system/tools/mkbootimg" revision="220c3652339e6f0502a3337dfbdf24a7afee1915"   />
-  <project name="android_system_tools_sysprop" path="system/tools/sysprop" revision="6372fde5de60e3062c01f796b97820ea30c0de4e"   />
-  <project name="android_system_tools_xsdc" path="system/tools/xsdc" revision="0be301d6033204d4668b2c26f84fd851dd7cf068"   />
-  <project name="android_system_update_engine" path="system/update_engine" revision="d3a8ad1200ef6b492a5f120fdd7defaee9fb56ab"   />
-  <project name="android_system_vold" path="system/vold" revision="21fd2d07817bf7d693510b9b64ff8a5ffcda876a"   />
-  <project name="android_test_app_compat_csuite" path="test/app_compat/csuite" revision="5c86fc9b9b042528f9af6ea7c53c22f892ed3b2f"  />
-  <project name="android_test_framework" path="test/framework" revision="c44480ac572c0eeaded19fa1c70833fcac21bfd0"   />
-  <project name="android_test_mlts_benchmark" path="test/mlts/benchmark" revision="866672a0319353db344101a5938ab814635365b2"   />
-  <project name="android_test_mlts_models" path="test/mlts/models" revision="a92852efb52754926c69e9cdbe651de935f55349"   />
-  <project name="android_test_mts" path="test/mts" revision="a92b902cd0e74e6568eb645b99370cbc4569a19f"  />
-  <project name="android_test_suite_harness" path="test/suite_harness" revision="5c5d2e2173abda08619b0d24a686891762dcc5d9"   />
-  <project name="android_test_vti_dashboard" path="test/vti/dashboard" revision="a9bd47e4caa21d535fb89c0e6efe23fa08d25847"   />
-  <project name="android_test_vti_fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="6319e3d94c65669050c49c6ca570096d41823b82"   />
-  <project name="android_test_vti_test_serving" path="test/vti/test_serving" revision="bdaf2327fefdb061abb03896d0eed6e776a7d6d7"   />
-  <project name="android_test_vts" path="test/vts" revision="e9938a879dba6ba5d409c53953fcddde0e1cfdaf"   />
-  <project name="android_test_vts-testcase_fuzz" path="test/vts-testcase/fuzz" revision="43fcddcde333cac6b365ea32f0fecc3a2c9d7ff8"   />
-  <project name="android_test_vts-testcase_hal" path="test/vts-testcase/hal" revision="d22539cc297783883eeb9adb30bf1528886e6c4e"   />
-  <project name="android_test_vts-testcase_hal-trace" path="test/vts-testcase/hal-trace" revision="2695892568f8fade958ec0ec172df8f295ae4112"   />
-  <project name="android_test_vts-testcase_kernel" path="test/vts-testcase/kernel" revision="5e5ddcb480d8195df226716ae9ca2185bc795b49"   />
-  <project name="android_test_vts-testcase_nbu" path="test/vts-testcase/nbu" revision="0712e2a442364af77a0b1dda0adf922d1d1447bc"   />
-  <project name="android_test_vts-testcase_performance" path="test/vts-testcase/performance" revision="f0e5dcee43de6f9c44a3872721087d96eaa48273"   />
-  <project name="android_test_vts-testcase_security" path="test/vts-testcase/security" revision="fff787f02b16ddd7a40d6252f06c6c8a5f5fff4c"   />
-  <project name="android_test_vts-testcase_vndk" path="test/vts-testcase/vndk" revision="e4be3a7a76e8d5575447b1f687eb8d8cf3f214b4"   />
-  <project name="android_tools_acloud" path="tools/acloud" revision="24d4a06dd195458321c206fbacd8333e129d1af7"   />
-  <project name="android_tools_apifinder" path="tools/apifinder" revision="dfa8cfc75cecc4b0b50e2b951903cca10af32163"   />
-  <project name="android_tools_apksig" path="tools/apksig" revision="10ccf1f176bb8e63727285ad340eae19899f2225"   />
-  <project name="android_tools_apkzlib" path="tools/apkzlib" revision="b855432e74c0b3764a154da97670f9ffe6981d06"   />
-  <project name="android_tools_asuite" path="tools/asuite" revision="5474d4e9edb55dc81d6ee846238aa03ec65c399f"   />
-  <project name="android_tools_carrier_settings" path="tools/carrier_settings" revision="028379115086b3b2d3adfdd1c79b7e6b3ef12861"   />
-  <project name="android_tools_currysrc" path="tools/currysrc" revision="faa13ba30d3ecaaf56b7c3b0fd68658a4eea090e"   />
-  <project name="platform/tools/dexter" remote="aosp" path="tools/dexter" revision="6426a69b96ebca6b9e15494d9f2bb0ec5cfffccd"   />
-  <project name="android_tools_doc_generation" path="tools/doc_generation" revision="d6bbb0df6ba5bd61baea6f09674588894f447246"   />
-  <project name="android_tools_external_fat32lib" path="tools/external/fat32lib" revision="2aa98e48614927413550d00c755351b3f68542b4"   />
-  <project name="android_tools_external_updater" path="tools/external_updater" revision="0cdcbb4bd863acd54e9cfc3f63da85c05fd0a278"   />
-  <project name="android_tools_loganalysis" path="tools/loganalysis" revision="915dbf1d7ed0f684d2d1bc3a6be9ef417c93527d"   />
-  <project name="android_tools_metalava" path="tools/metalava" revision="1932f01741e57ba39d10fc67476ddd01049c072d"   />
-  <project name="android_tools_ndkports" path="tools/ndkports" revision="d0ec81e4b134f4b1446d3fd5a6dfbf095475597c"   />
-  <project name="android_tools_repohooks" path="tools/repohooks" revision="71af0a630e8e17cac3a89a574099e53ab18f0a2b"   />
-  <project name="android_tools_security" path="tools/security" revision="a5c3644bd83674858e0b9d5da3e6014a3cbf3ba6"   />
-  <project name="android_tools_test_connectivity" path="tools/test/connectivity" revision="e9cecf2701c69060265c8bb58db0565ddc6e037b"   />
-  <project name="android_tools_test_graphicsbenchmark" path="tools/test/graphicsbenchmark" revision="7c31a9c1f32d602e1b50446951088d3beddedb84"   />
-  <project name="android_tools_tradefederation_core" path="tools/tradefederation/core" revision="980484c2db22f6d702d2d0d495c15008f5122eb4"   />
-  <project name="android_tools_tradefederation_contrib" path="tools/tradefederation/contrib" revision="0ff7007d58dd912f7d5dca4178a9731494b31222"   />
-  <project name="android_tools_treble" path="tools/treble" revision="4a70b7b8a10119fe886bb009c634646a533f7db0"   />
-  <project name="android_tools_trebuchet" path="tools/trebuchet" revision="b735f448e61c99f4c06101902ff76eee4e5496f1"   />
-  <project name="android_vendor_amlogic_common" path="vendor/amlogic/common" revision="b539fd3c60cbd5cda9b136a11063f48706bd83a8"  />
-  <project name="android_vendor_amlogic_kvim1s" path="vendor/amlogic/kvim1s" revision="4d4f32d87e33ab4d99385b8cd9bf81598cf630eb"  />
-  <project name="android_toolchain_benchmark" path="toolchain/benchmark" revision="1fba1825631e6e52dff5b3ceb87a5b439e2acf52"  />
-  <project name="android_toolchain_pgo-profiles" path="toolchain/pgo-profiles" revision="df7cd88e8839bdf864700fc7d302b678a604b943"   />
-  <project name="android_tools_platform-compat" path="tools/platform-compat" revision="b553fea7dd2aa8dcc26f4d8f91effd86e55dd72e"   />
-  <project name="u-boot" path="bootloader/uboot" revision="111099566984e05bf94905fe73c981c0639b5498"   >
+  <project name="platform/prebuilts/tools" remote="aosp" path="prebuilts/tools" />
+  <project name="android_prebuilts_vndk_v27" path="prebuilts/vndk/v27" />
+  <project name="android_prebuilts_vndk_v28" path="prebuilts/vndk/v28" />
+  <project name="android_prebuilts_vndk_v29" path="prebuilts/vndk/v29" />
+  <project name="android_sdk" path="sdk" />
+  <project name="platform/system/apex" remote="aosp" path="system/apex" />
+  <project name="android_system_bpf" path="system/bpf" />
+  <project name="android_system_bpfprogs" path="system/bpfprogs" />
+  <project name="android_system_bt" path="system/bt" />
+  <project name="android_system_ca-certificates" path="system/ca-certificates" />
+  <project name="android_system_chre" path="system/chre" />
+  <project name="android_system_connectivity_wificond" path="system/connectivity/wificond" />
+  <project name="android_system_connectivity_wifilogd" path="system/connectivity/wifilogd" />
+  <project name="android_system_core" path="system/core" />
+  <project name="android_system_extras" path="system/extras" />
+  <project name="android_system_gatekeeper" path="system/gatekeeper" />
+  <project name="android_system_gsid" path="system/gsid" />
+  <project name="android_system_hardware_interfaces" path="system/hardware/interfaces" />
+  <project name="android_system_hwservicemanager" path="system/hwservicemanager" />
+  <project name="android_system_incremental_delivery" path="system/incremental_delivery" />
+  <project name="android_system_iorap" path="system/iorap" />
+  <project name="android_system_keymaster" path="system/keymaster" />
+  <project name="android_system_libartpalette" path="system/libartpalette" />
+  <project name="android_system_libfmq" path="system/libfmq" />
+  <project name="android_system_libhidl" path="system/libhidl" />
+  <project name="android_system_libhwbinder" path="system/libhwbinder" />
+  <project name="android_system_libsysprop" path="system/libsysprop" />
+  <project name="android_system_libufdt" path="system/libufdt" />
+  <project name="android_system_libvintf" path="system/libvintf" />
+  <project name="android_system_linkerconfig" path="system/linkerconfig" />
+  <project name="android_system_media" path="system/media" />
+  <project name="android_system_memory_libion" path="system/memory/libion" />
+  <project name="android_system_memory_libmeminfo" path="system/memory/libmeminfo" />
+  <project name="android_system_memory_libmemtrack" path="system/memory/libmemtrack" />
+  <project name="android_system_memory_libmemunreachable" path="system/memory/libmemunreachable" />
+  <project name="android_system_memory_lmkd" path="system/memory/lmkd" />
+  <project name="android_system_netd" path="system/netd" />
+  <project name="android_system_nfc" path="system/nfc" />
+  <project name="android_system_nvram" path="system/nvram" />
+  <project name="android_system_security" path="system/security" />
+  <project name="android_system_sepolicy" path="system/sepolicy" />
+  <project name="android_system_server_configurable_flags" path="system/server_configurable_flags" />
+  <project name="android_system_teeui" path="system/teeui" />
+  <project name="android_system_testing_gtest_extras" path="system/testing/gtest_extras" />
+  <project name="android_system_timezone" path="system/timezone" />
+  <project name="android_system_tools_aidl" path="system/tools/aidl" />
+  <project name="android_system_tools_hidl" path="system/tools/hidl" />
+  <project name="android_system_tools_mkbootimg" path="system/tools/mkbootimg" />
+  <project name="android_system_tools_sysprop" path="system/tools/sysprop" />
+  <project name="android_system_tools_xsdc" path="system/tools/xsdc" />
+  <project name="android_system_update_engine" path="system/update_engine" />
+  <project name="android_system_vold" path="system/vold" />
+  <project name="android_test_app_compat_csuite" path="test/app_compat/csuite" />
+  <project name="android_test_framework" path="test/framework" />
+  <project name="android_test_mlts_benchmark" path="test/mlts/benchmark" />
+  <project name="android_test_mlts_models" path="test/mlts/models" />
+  <project name="android_test_mts" path="test/mts" />
+  <project name="android_test_suite_harness" path="test/suite_harness" />
+  <project name="android_test_vti_dashboard" path="test/vti/dashboard" />
+  <project name="android_test_vti_fuzz_test_serving" path="test/vti/fuzz_test_serving" />
+  <project name="android_test_vti_test_serving" path="test/vti/test_serving" />
+  <project name="android_test_vts" path="test/vts" />
+  <project name="android_test_vts-testcase_fuzz" path="test/vts-testcase/fuzz" />
+  <project name="android_test_vts-testcase_hal" path="test/vts-testcase/hal" />
+  <project name="android_test_vts-testcase_hal-trace" path="test/vts-testcase/hal-trace" />
+  <project name="android_test_vts-testcase_kernel" path="test/vts-testcase/kernel" />
+  <project name="android_test_vts-testcase_nbu" path="test/vts-testcase/nbu" />
+  <project name="android_test_vts-testcase_performance" path="test/vts-testcase/performance" />
+  <project name="android_test_vts-testcase_security" path="test/vts-testcase/security" />
+  <project name="android_test_vts-testcase_vndk" path="test/vts-testcase/vndk" />
+  <project name="android_tools_acloud" path="tools/acloud" />
+  <project name="android_tools_apifinder" path="tools/apifinder" />
+  <project name="android_tools_apksig" path="tools/apksig" />
+  <project name="android_tools_apkzlib" path="tools/apkzlib" />
+  <project name="android_tools_asuite" path="tools/asuite" />
+  <project name="android_tools_carrier_settings" path="tools/carrier_settings" />
+  <project name="android_tools_currysrc" path="tools/currysrc" />
+  <project name="platform/tools/dexter" remote="aosp" path="tools/dexter" />
+  <project name="android_tools_doc_generation" path="tools/doc_generation" />
+  <project name="android_tools_external_fat32lib" path="tools/external/fat32lib" />
+  <project name="android_tools_external_updater" path="tools/external_updater" />
+  <project name="android_tools_loganalysis" path="tools/loganalysis" />
+  <project name="android_tools_metalava" path="tools/metalava" />
+  <project name="android_tools_ndkports" path="tools/ndkports" />
+  <project name="android_tools_repohooks" path="tools/repohooks" />
+  <project name="android_tools_security" path="tools/security" />
+  <project name="android_tools_test_connectivity" path="tools/test/connectivity" />
+  <project name="android_tools_test_graphicsbenchmark" path="tools/test/graphicsbenchmark" />
+  <project name="android_tools_tradefederation_core" path="tools/tradefederation/core" />
+  <project name="android_tools_tradefederation_contrib" path="tools/tradefederation/contrib" />
+  <project name="android_tools_treble" path="tools/treble" />
+  <project name="android_tools_trebuchet" path="tools/trebuchet" />
+  <project name="android_vendor_amlogic_common" path="vendor/amlogic/common" />
+  <project name="android_vendor_amlogic_kvim1s" path="vendor/amlogic/kvim1s" />
+  <project name="android_toolchain_benchmark" path="toolchain/benchmark" />
+  <project name="android_toolchain_pgo-profiles" path="toolchain/pgo-profiles" />
+  <project name="android_tools_platform-compat" path="tools/platform-compat" />
+  <project name="u-boot" path="bootloader/uboot" >
     <copyfile src="fip/mk" dest="bootloader/uboot/mk"/>
   </project>
-  <project name="android_vendor_amlogic_common_aml_mp_sdk" path="vendor/amlogic/common/aml_mp_sdk" revision="a6d1c2c4fcac4dfc6993f6a464ad13fb2b90d567"  />
-  <project name="android_vendor_amlogic_common_dsp_dsp_util" path="vendor/amlogic/common/dsp/dsp_util" revision="a33c2ad6c6ecc232e2aca6c148d255b8d0263eab"  />
-  <project name="android_vendor_amlogic_common_frameworks_av" path="vendor/amlogic/common/frameworks/av" revision="2a4932d1f77a09ebda78a62668af0f16964ecd3a"  />
-  <project name="android_vendor_amlogic_common_hdcp" path="vendor/amlogic/common/hdcp" revision="2fcccbd3e7139e6afb80abde519e4264d336d739"  />
-  <project name="android_vendor_amlogic_common_libdsm" path="vendor/amlogic/common/libdsm" revision="1f7ffcb89c38a76fea5691dccc78a2c42dfb6e89"/>
-  <project name="android_vendor_amlogic_common_mediahal_sdk" path="vendor/amlogic/common/mediahal_sdk" revision="c785d0b59de98bd09599b3eecd5a315a0e2e6a62"  />
-  <project name="android_vendor_amlogic_common_provision" path="vendor/amlogic/common/provision" revision="a20e21310c6f68b59387349875d7fcb21dff31ad"  />
-  <project name="android_vendor_amlogic_common_system_libgdc" path="vendor/amlogic/common/system/libgdc" revision="73d3f981f7b7a3cddd9a0ea954e6fe7fa179c05f"  />
-  <project name="android_vendor_amlogic_common_tdk_v3" path="vendor/amlogic/common/tdk_v3" revision="af1075d6b3785b1aace84d50d2dc8d87e7a1bcbe"  />
-  <project name="android_vendor_amlogic_common_tdk_linuxdriver" path="vendor/amlogic/common/tdk_linuxdriver" revision="ead5e9f718a9bc79b3559e9b595923afe289ed72"  />
-  <project name="android_vendor_amlogic_common_pre_submit_for_google" path="vendor/amlogic/common/pre_submit_for_google" revision="662a684a0ac8cd05648af1de5f07d09ae1c82538"  />
-  <project name="android_vendor_amlogic_common_external_freetype" path="vendor/amlogic/common/external/freetype" revision="2add0984e4ff4c649f848677dac646f7cb791def"  />
-  <project name="android_vendor_amlogic_common_prebuilt_libmediadrm_playready" path="vendor/amlogic/common/prebuilt/libmediadrm/playready" revision="1f21c4772216d37e2d030af6860cab577dfd0755"/>
-  <project name="android_vendor_widevine" path="vendor/widevine" revision="2171e55d0b286d4c0747f2ffd0c779359ead3c1a"  />
+  <project name="android_vendor_amlogic_common_aml_mp_sdk" path="vendor/amlogic/common/aml_mp_sdk" />
+  <project name="android_vendor_amlogic_common_dsp_dsp_util" path="vendor/amlogic/common/dsp/dsp_util" />
+  <project name="android_vendor_amlogic_common_frameworks_av" path="vendor/amlogic/common/frameworks/av" />
+  <project name="android_vendor_amlogic_common_hdcp" path="vendor/amlogic/common/hdcp" />
+  <project name="android_vendor_amlogic_common_libdsm" path="vendor/amlogic/common/libdsm" />
+  <project name="android_vendor_amlogic_common_mediahal_sdk" path="vendor/amlogic/common/mediahal_sdk" />
+  <project name="android_vendor_amlogic_common_provision" path="vendor/amlogic/common/provision" />
+  <project name="android_vendor_amlogic_common_system_libgdc" path="vendor/amlogic/common/system/libgdc" />
+  <project name="android_vendor_amlogic_common_tdk_v3" path="vendor/amlogic/common/tdk_v3" />
+  <project name="android_vendor_amlogic_common_tdk_linuxdriver" path="vendor/amlogic/common/tdk_linuxdriver" />
+  <project name="android_vendor_amlogic_common_pre_submit_for_google" path="vendor/amlogic/common/pre_submit_for_google" />
+  <project name="android_vendor_amlogic_common_external_freetype" path="vendor/amlogic/common/external/freetype" />
+  <project name="android_vendor_amlogic_common_prebuilt_libmediadrm_playready" path="vendor/amlogic/common/prebuilt/libmediadrm/playready" />
+  <project name="android_vendor_widevine" path="vendor/widevine" />
   
   <repo-hooks in-project="android_tools_repohooks" enabled-list="pre-upload"/>
 </manifest>
